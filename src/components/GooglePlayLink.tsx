@@ -8,7 +8,7 @@ export function GooglePlayLink({
 }) {
   return (
     <Link
-      href="https://play.google.com/store/apps/details?id=uz.uzinfocom.efael.app"
+      href="https://play.google.com/store/apps/details?id=uz.uzinfocom.ucharmessenger"
       aria-label="Download on Google Play Store"
       className={clsx(
         'rounded-lg transition-colors',
