@@ -22,7 +22,7 @@ const faqs = [
     {
       question: 'Can I host my own server?',
       answer:
-        'Yes — that’s one of the core strengths of Matrix. You can deploy your own homeserver using Synapse or Dendrite easily with Uchar\'s provided infrastructure via NixOS, and manage your own identity server if desired.',
+        "Yes — that’s one of the core strengths of Matrix. You can deploy your own homeserver using Synapse or Dendrite easily with Uchar's provided infrastructure via NixOS, and manage your own identity server if desired.",
     },
     {
       question: 'Can I use it with other platforms?',
@@ -47,7 +47,8 @@ const faqs = [
         'Yes. Both the Matrix protocol and our client/infra are open source. You can inspect, audit, or contribute to the code.',
     },
     {
-      question: 'What’s the difference between Matrix and other messaging apps?',
+      question:
+        'What’s the difference between Matrix and other messaging apps?',
       answer:
         'Unlike traditional messengers, Matrix is decentralized — there’s no central server controlling your conversations. It supports federation, so anyone can run their own server and still connect to others. Plus, everything is end-to-end encrypted, extensible, and open-source — no walled gardens, no surveillance capitalism.',
     },
@@ -59,7 +60,7 @@ export function Faqs() {
     <section
       id="faqs"
       aria-labelledby="faqs-title"
-      className="border-t border-gray-200 py-20 sm:py-32 shadow-lg shadow-gray-900/5"
+      className="border-t border-gray-200 py-20 shadow-lg shadow-gray-900/5 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
@@ -67,15 +68,15 @@ export function Faqs() {
             id="faqs-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Frequently asked questions
+            Tez-tez beriladigan savollar
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            If you have anything else you want to ask,{' '}
+            Agar yana biror narsa so`ramoqchi bo`lsangiz,{' '}
             <a
               href="mailto:support@uchar.uz"
               className="text-gray-900 underline"
             >
-              reach out to us
+              bizga murojaat qilmoq
             </a>
             .
           </p>

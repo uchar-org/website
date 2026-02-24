@@ -38,23 +38,23 @@ interface CustomAnimationProps {
 
 const features = [
   {
-    name: 'Decentralized by Default',
+    name: 'Asli markazlashmagan',
     description:
-      'Your conversations don’t belong on someone else’s server. With Matrix, your data stays on your terms — self-host, federate, or join trusted instances. No central authority. No vendor lock-in.',
+      'Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida ma`lumotlaringiz o`z-o`zini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qo`shilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yo`q. Sotuvchi qulfi yo`q.',
     icon: DeviceUserIcon,
     screen: ChatScreen,
   },
   {
-    name: 'End-to-End Encryption',
+    name: 'Boshidan oxirigacha shifrlash',
     description:
-      'Messages, voice calls, video — all encrypted with the latest protocols like Olm and Megolm. Your communication stays private, whether you’re chatting one-on-one or collaborating in global rooms.',
+      'Xabarlar, ovozli qo`ng`iroqlar, video - barchasi Olm va Megolm kabi eng so`nggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi.',
     icon: DeviceNotificationIcon,
     screen: E2EEncryptionScreen,
   },
   {
-    name: 'Power Features for Power Users',
+    name: 'Ilg`or foydalanuvchilar uchun kengaytirilgan imkoniyatlar',
     description:
-      'Threaded conversations, widgets, bots, VoIP, reactions, and more. Whether you’re running a hacker collective, a DAO, or a gaming guild — you’re covered.',
+      'Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa ko`plab imkoniyatlar. Xakerlar jamoasi, DAO yoki o`yin gildiyasini boshqarayotgan bo`lsangiz ham — barchasi siz uchun mujassam.',
     icon: DeviceTouchIcon,
     screen: PowerFeatures,
   },
@@ -186,9 +186,9 @@ const bodyAnimation: MotionProps = {
 
 type ScreenProps =
   | {
-    animated: true
-    custom: CustomAnimationProps
-  }
+      animated: true
+      custom: CustomAnimationProps
+    }
   | { animated?: false }
 
 function ChatScreen(props: ScreenProps) {
@@ -555,19 +555,20 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for investing all your money"
-      className="bg-gray-900 py-20 sm:py-32"
+      className="bg-brand py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Everything you need for private, sovereign communication. Try it
-            yourself.
+            Xufyona va mustaqil muloqot uchun kerakli barcha narsa. O`zingiz
+            sinab ko`ring.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            We designed this platform for communities, activists, developers,
-            and independent thinkers — people who don’t want to be tracked,
-            monetized, or censored. If other platforms compromise, we go the
-            other way. If privacy matters, we build it in.
+            Biz bu platformani kuzatuv, monetizatsiya yoki senzuraga uchrashni
+            istamaydigan jamoalar, faollar, dasturchilar va mustaqil
+            fikrlaydigan odamlar uchun ishlab chiqdik. Agar boshqa platformalar
+            murosaga kelsa, biz boshqa yo`ldan boramiz. Agar maxfiylik muhim
+            bo`lsa, biz uni o`rnatamiz.
           </p>
         </div>
       </Container>

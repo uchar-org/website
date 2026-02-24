@@ -54,6 +54,8 @@
   --color-gray-900: oklch(0.205 0 0);
   --color-gray-950: oklch(0.145 0 0);
 
+  --color-brand: oklch(0.3588 0.1507 263.32);
+
   --font-sans: var(--font-inter);
 
   --container-2xl: 40rem;
