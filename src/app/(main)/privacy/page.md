@@ -1,127 +1,125 @@
-# Privacy Policy
+# Maxfiylik siyosati
 
-- **Effective Date:** July 2025
-- **Owner:** Uzinfocom
-- **Platform:** uchar.uz
-- **Contact:** support@uchar.uz
+- **Kuchga kirish sanasi:** July 2025
+- **Egasi:** Uzinfocom
+- **Platforma:** uchar.uz
+- **Aloqa:** support@uchar.uz
 
-## 1. Introduction
+## 1. Kirish
 
-At Uzinfocom, we believe secure communication is a fundamental right. This Privacy Policy explains what data we collect when you use Uchar, a decentralized messaging platform built on the Matrix protocol, and how we protect and use that data. We do not sell your information or use it for advertising.
+Uzinfocomda biz xavfsiz aloqa asosiy huquq deb hisoblaymiz. Bu Maxfiylik siyosati Matrix protokoli asosida qurilgan markazlashmagan xabar almashinuv platformasi Uchar ilovasidan foydalanganingizda qanday ma'lumotlarni olishimiz va ushbu ma'lumotlarni qanday himoyalashimiz va foydalanishimizni tushuntiradi. Biz ma'lumotlaringizni sotmaymiz yoki ulardan reklama maqsadlarida foydalanmaymiz.
 
-## 2. Scope of This Policy
+## 2. Ushbu siyosatning qo‘llanilish doirasi
 
-This policy applies to:
+Bu siyosat quyidagilarga nisbatan tatbiq etiladi:
 
-- Our official Matrix homeserver at https://uchar.uz
-- Our Matrix client apps (web, desktop, mobile) branded as Uchar
-- Any related services directly managed by Uzinfocom
+- Bizning rasmiy Matrix uy tarmog‘imiz: https://uchar.uz
+- Uchar brendi ostidagi Matrix mijoz ilovalarimiz (veb, desktop, mobil)
+- Uzinfocom tomonidan bevosita boshqariladigan har qanday tegishli xizmatlar
 
-This policy does not apply to:
+Bu siyosat quyidagilarga nisbatan tatbiq etilmaydi:
 
-- Other Matrix homeservers operated by third parties
-- Bridges, identity servers, or services not directly controlled by Uzinfocom
+- Uchinchi shaxslar boshqaradigan boshqa Matrix uy tarmoqlari
+- Uzinfocom tomonidan bevosita nazorat qilinmaydigan ko‘priklar, identifikatsiya tarmoqlari yoki xizmatlari
 
-## 3. Who We Are
+## 3. Biz kimmiz
 
-Uzinfocom, a state-owned IT infrastructure provider in the Republic of Uzbekistan, is the data controller for services provided through uchar.uz.
+Uzinfocom - O‘zbekiston Respublikasidagi davlat IT-infratuzilmasi provayderi bo‘lib, uchar.uz orqali ko‘rsatiladigan xizmatlar uchun ma’lumotlar nazoratchisi hisoblanadi.
 
-If you have any questions about this policy, please contact us at:
-📧 support@uchar.uz
+Agar sizda ushbu siyosat bo‘yicha savollar bo‘lsa, iltimos, biz bilan bog‘laning: 📧 support@uchar.uz
 
-## 4. What Data We Collect
+## 4. Biz qaysi ma'lumotlarni yig'amiz
 
-a) Information You Provide
+a) Siz taqdim etgan ma'lumotlar
 
-- Username, display name, and avatar
-- Password (stored securely using hashing and salting)
-- Email address or phone number (optional, used only for account recovery or verification)
+- Foydalanuvchi nomi, ism va avatar
+- Parol (xavfsiz saqlash uchun hashing va salting ishlatiladi)
+- Elektron pochta manzili yoki telefon raqami (ixtiyoriy, faqat hisobni tiklash yoki tasdiqlash uchun ishlatiladi)
 
-b) Network and Usage Data
+b) Tarmoq va foydalanish ma’lumotlari
 
-- IP address and user agent (temporarily stored for abuse prevention)
-- Device/session identifiers
-- Room participation metadata (e.g., when you join a room)
+- IP manzil va foydalanuvchi agenti (qonunbuzarlikning oldini olish uchun vaqtincha saqlanadi)
+- Qurilma/seans identifikatorlari
+- Uchrashuvdagi ishtirok metama'lumotlari (masalan, qo‘ng‘iroqqa qo‘shilganingizda)
 
-c) Messages and Content
+c) Xabarlar va kontent
 
-- All private messages and media are end-to-end encrypted using Matrix’s Olm/Megolm protocols.
-- Uzinfocom cannot decrypt or access message contents.
+- Barcha shaxsiy xabarlar va media fayllar Matrixning Olm/Megolm protokollari yordamida oxirigacha shifrlangan.
+- Uzinfocom xabar mazmunini ochish yoki ularga kirish imkoniga ega emas.
 
-## 5. Why We Collect This Data
+## 5. Nima uchun biz bu ma'lumotlarni yig‘amiz
 
-We collect and process data for the following purposes:
+Biz ma’lumotlarni quyidagi maqsadlarda olamiz va qayta ishlaymiz:
 
-- To operate and maintain your Matrix account
-- To enable secure end-to-end communication
-- To authenticate logins and sessions
-- To monitor platform health, prevent abuse, and detect fraud
-- To provide optional services (like account recovery)
+- Sizning Matrix hisobingizni boshqarish va saqlash
+- Xavfsiz muloqotni ta’minlash uchun
+- Loginlar va seanslarni autentifikatsiya qilish
+- Platforma barqarorligini kuzatish, suiiste’molchilikning oldini olish va firibgarlikni aniqlash uchun
+- Ixtiyoriy xizmatlarni taqdim etish (masalan, hisobni tiklash)
 
-We do not track your activity for marketing or advertising purposes. We do not sell or share your data with third parties.
+Biz sizning faoliyatingizni marketing yoki reklama maqsadlarida kuzatmaymiz. Biz sizning ma'lumotlaringizni uchinchi tomonlarga sotmaymiz yoki ulashmaymiz.
 
-## 6. Federation with Other Servers
+## 6. Boshqa tarmoqlar bilan federatsiyalash
 
-Matrix is a federated protocol. If you interact with users on other homeservers (outside uchar.uz):
+Matrix federatsiyalashgan protokol hisoblanadi. Agar siz boshqa uy tarmoqlaridagi foydalanuvchilar bilan muloqot qilsangiz (uchar.uz tashqarisida):
 
-- Your Matrix ID (MXID), device keys, and messages may be shared with those servers
-- Uzinfocom cannot control how third-party homeservers process data
+- Sizning Matrix ID (MXID), qurilma kalitlari va xabarlar ushbu serverlar bilan ulashilishi mumkin
+- Uzinfocom uchinchi tomon uy tarmoqlari ma'lumotlarni qanday qayta ishlashini nazorat qila olmaydi
 
-We recommend you only federate with trusted Matrix homeservers.
+Ishonchli Matrix uy tarmoqlari bilan federatsiyalashishni tavsiya qilamiz.
 
-## 7. Bridges and Third-Party Services
+## 7. Ko‘priklar va tashqi xizmatlar
 
-You may choose to connect your account to third-party services (e.g., Telegram, Slack) via bridges. These integrations are opt-in and handled by external entities.
-We do not send data to third parties unless you explicitly initiate such integrations.
+Siz o‘z hisobingizni uchinchi tomon xizmatlariga (masalan, Telegram, Slack) ko‘priklar orqali ulashni tanlashingiz mumkin. Ushbu integratsiyalar ixtiyoriy bo‘lib, tashqi tashkilotlar tomonidan boshqariladi.
+Toki siz tashqi xizmatlar bilan ochiq oydin bog‘lanishni tanlamasangiz, biz sizning ma’lumotlaringizni uchinchi tomonlarga yubormaymiz.
 
-## 8. Data Retention
+## 8. Ma’lumotlarni saqlash
 
-- Session data and logs are kept for up to 180 days for operational and security purposes
-- Encrypted message history is retained as long as your account exists, unless you delete it
-- You may delete your account at any time, which removes your profile, credentials, and local message history from uchar.uz
+- Seans ma'lumotlari va jurnallari operativ va xavfsizlik maqsadlarida 180 kungacha saqlanadi.
+- Agar o‘chirib yubormasangiz, shifrlangan xabarlar tarixi hisobingiz mavjud bo‘lgunicha saqlanadi.
+- Hisobingizni istalgan vaqtda o‘chirishingiz mumkin, bu sizning profilingizni, kirish ma'lumotlaringizni va uchar.uzdagi mahalliy xabar tarixingizni o‘chiradi.
 
-## 9. Security Measures
+## 9. Xavfsizlik choralari
 
-Uzinfocom implements strong technical and organizational measures to protect your data:
+Uzinfocom sizning ma'lumotlaringizni himoya qilish uchun kuchli texnik va tashkiliy choralarni amalga oshiradi:
 
-- All passwords are stored using salted hashing (bcrypt)
-- End-to-end encryption is enabled by default for private rooms
-- Access to infrastructure is restricted to authorized personnel only
-- Servers are monitored and patched regularly
+- Barcha parollar salted hashing (bcrypt) yordamida saqlanadi
+- Shaxsiy xonalar uchun oxirigacha shifrlash standart bo‘lib yoqilgan
+- Infratuzilma faqat vakolatli xodimlar tomonidan kirish mumkin
+- Tarmoqlar muntazam nazorat qilinadi va yangilanadi
 
-## 10. Children’s Privacy
+## 10. Bolalar uchun maxfiylik
 
-Uchar is not intended for users under 16 without parental consent. We do not knowingly collect personal data from children.
+Uchar 16 yoshga to‘lmagan foydalanuvchilarning ota-ona roziligisiz foydalanishi uchun mo‘ljallanmagan. Biz bolalardan shaxsiy ma'lumotlarni bila turib yig‘maymiz.
 
-## 11. Legal Basis and Disclosure
+## 11. Huquqiy asos va oshkorlik
 
-We may process your data based on:
+Biz ma’lumotlaringizni quyidagilarga asosan qayta ishlashimiz mumkin:
 
-- Your consent (e.g., for email recovery)
-- Contractual necessity (to deliver the service)
-- Legitimate interest (security, performance)
+- Roziligingiz (masalan, emailni tiklash uchun)
+- Shartnomaviy zaruriyat (xizmat ko‘rsatish uchun)
+- Qonuniy manfaatdorlik (xavfsizlik, samaradorlik)
 
-We will only disclose your data if required by law, court order, or to prevent imminent threats to public safety. We do not access or share end-to-end encrypted content under any circumstances.
+Biz ma'lumotlaringizni faqat qonun, sud qarori yoki jamoat xavfsizligiga tahdidlarning oldini olish uchun zarur bo‘lgandagina oshkor qilamiz. Biz hech qanday holatda boshidan oxirigacha shifrlangan kontentga kirmaymiz yoki ulashmaymiz.
 
-## 12. Your Rights
+## 12. Sizning huquqlaringiz
 
-As a user, you have the right to:
+Foydalanuvchi sifatida siz quyidagi huquqlarga egasiz:
+- Ma'lumotlaringizdan foydalanish
+- Ma'lumotlaringizni tuzatish yoki o‘chirishni so‘rash
+- Ba'zi hollarda ma'lumotlaringizni qayta ishlashga qarshi chiqish
+- Ma'lumotlaringizni boshqa Matrix tarmog‘iga ko‘chirish
+- Ixtiyoriy ma'lumotlardan foydalanish uchun roziligingizni bekor qilish
 
-- Access your data
-- Request correction or deletion
-- Object to processing in some cases
-- Port your data to another Matrix server
-- Withdraw consent for optional data uses
+Huquqlaringizni amalga oshirish uchun bog‘lanish: support@uchar.uz
 
-To exercise your rights, contact: support@uchar.uz
+## 13. Siyosat yangilanishlari
 
-## 13. Policy Updates
+Biz ushbu Maxfiylik siyosatini xizmatdagi o‘zgarishlar yoki qonunchilik talablarini aks ettirish maqsadida yangilashimiz mumkin. Muhim o‘zgarishlar haqida ilova yoki veb-sayt orqali xabar beriladi. Uchardan foydalanishda davom etish yangilangan siyosatga rozilik bildirishni anglatadi.
 
-We may update this Privacy Policy to reflect changes in the service or legal requirements. Material changes will be communicated via the app or website. Continued use of Uchar implies agreement to the updated policy.
+## 14. Bog‘lanish uchun ma'lumotlar
 
-## 14. Contact Information
-
-- Uzinfocom – State Unitary Enterprise
-- Address: Republic of Uzbekistan, Tashkent city, Muminov Street 7/1, 100011
+- Uzinfocom – Davlat Unitar Tashkiloti
+- Manzil: O‘zbekiston Respublikasi, Toshkent shahri, Mo‘minov ko‘chasi 7/1, 100011
 - Email: support@uchar.uz
-- Website: https://uchar.uz
+- Veb-sayt: https://uchar.uz

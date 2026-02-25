@@ -56,6 +56,14 @@
 
   --color-brand: oklch(0.3588 0.1507 263.32);
 
+  --color-brand-100: oklch(0.9577 0.0189 279.53);
+  --color-brand-200: oklch(0.8462 0.0719 276.94);
+  --color-brand-300: oklch(0.7263 0.1337 274.12);
+  --color-brand-400: oklch(0.6063 0.1985 268.02);
+  --color-brand-500: oklch(0.486 0.204 263.32);
+  --color-brand-600: oklch(0.3588 0.1507 263.32);
+  --color-brand-700: oklch(0.2327 0.0968 263.21);
+
   --font-sans: var(--font-inter);
 
   --container-2xl: 40rem;

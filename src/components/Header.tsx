@@ -109,10 +109,10 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="/features">
+                            <MobileNavLink href="#features">
                               Xususiyatlar
                             </MobileNavLink>
-                            <MobileNavLink href="/faqs">
+                            <MobileNavLink href="#faqs">
                               Savol-javoblar
                             </MobileNavLink>
                             <MobileNavLink href="/privacy">

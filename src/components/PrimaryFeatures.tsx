@@ -40,21 +40,21 @@ const features = [
   {
     name: 'Asli markazlashmagan',
     description:
-      'Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida ma`lumotlaringiz o`z-o`zini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qo`shilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yo`q. Sotuvchi qulfi yo`q.',
+      "Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida ma'lumotlaringiz o‘z-o‘zini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qo‘shilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yo‘q. Sotuvchi qulfi yo‘q.",
     icon: DeviceUserIcon,
     screen: ChatScreen,
   },
   {
     name: 'Boshidan oxirigacha shifrlash',
     description:
-      'Xabarlar, ovozli qo`ng`iroqlar, video - barchasi Olm va Megolm kabi eng so`nggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi.',
+      'Xabarlar, ovozli qo‘ng‘iroqlar, video - barchasi Olm va Megolm kabi eng so‘nggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi.',
     icon: DeviceNotificationIcon,
     screen: E2EEncryptionScreen,
   },
   {
-    name: 'Ilg`or foydalanuvchilar uchun kengaytirilgan imkoniyatlar',
+    name: 'Ilg‘or foydalanuvchilar uchun kengaytirilgan imkoniyatlar',
     description:
-      'Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa ko`plab imkoniyatlar. Xakerlar jamoasi, DAO yoki o`yin gildiyasini boshqarayotgan bo`lsangiz ham — barchasi siz uchun mujassam.',
+      'Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa ko‘plab imkoniyatlar. Xakerlar jamoasi, DAO yoki o‘yin gildiyasini boshqarayotgan bo‘lsangiz ham — barchasi siz uchun mujassam.',
     icon: DeviceTouchIcon,
     screen: PowerFeatures,
   },
@@ -264,7 +264,7 @@ function E2EEncryptionScreen(props: ScreenProps) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenBody
-        className="bg-gray-900 text-white"
+        className="bg-white pt-3"
         {...(props.animated ? { ...bodyAnimation, custom: props.custom } : {})}
       >
         <Avatar text="S" color="red" size="large" className="mx-auto" />
@@ -273,29 +273,29 @@ function E2EEncryptionScreen(props: ScreenProps) {
           <div className="text-gray-500">@shakhzodkudratov:uchar.uz</div>
           <div className="mx-auto inline-flex items-center gap-1 rounded-xl bg-green-900 px-3 text-sm text-green-200">
             <FaLock />
-            Encrypted
+            Shifrlangan
           </div>
         </div>
 
         <div className="mb-8 flex justify-evenly gap-4 text-2xl">
           <div className="flex flex-col items-center gap-2">
             <FaBell />
-            <span className="text-base">Mute</span>
+            <span className="text-base">Ovozsiz qilish</span>
           </div>
 
           <div className="flex flex-col items-center gap-2">
             <FaVideo />
-            <span className="text-base">Call</span>
+            <span className="text-base">Qo‘ng‘iroq qilish</span>
           </div>
         </div>
 
         <div className="flex gap-2 px-6">
           <FaLock className="shrink-0 text-xl" />
           <div>
-            <div>Message encryption enabled</div>
+            <div>Xabarni shifrlash yoqilgan</div>
             <div className="text-sm text-gray-400">
-              Messages are secured with locks. Only you and the recipients have
-              the unique keys to unlock them.
+              Xabarlar qulf bilan himoyalangan. Ularni ochadigan noyob kalitlar
+              faqat sizda va xabar oluvchilarda bor.
             </div>
           </div>
         </div>
@@ -309,19 +309,19 @@ function PowerFeatures(props: ScreenProps) {
     <AppScreen className="w-full">
       <MotionAppScreenBody
         {...(props.animated ? { ...bodyAnimation, custom: props.custom } : {})}
-        className="bg-gray-900 text-white"
+        className="bg-white pt-3"
       >
-        <div className="flex px-6">
+        <div className="flex items-center px-6">
           <Avatar text="A" color="red" size="medium" className="mr-2" />
           <div className="flex flex-col">
-            <div className="text-sm">Abdusattor</div>
-            <div className="text-sm text-gray-400">
+            <div className="text-sm text-gray-900">Abdusattor</div>
+            <div className="text-sm text-gray-700">
               Ha bugun kechga uchrashamiz
             </div>
           </div>
         </div>
 
-        <hr className="my-3 text-gray-700" />
+        <hr className="my-2 text-gray-200" />
 
         <div className="flex justify-evenly text-2xl">
           <div>👍</div>
@@ -331,32 +331,32 @@ function PowerFeatures(props: ScreenProps) {
           <div>👌</div>
         </div>
 
-        <hr className="my-3 text-gray-700" />
+        <hr className="my-2 text-gray-200" />
 
-        <div className="mt-8 flex flex-col gap-8 px-6 [&>div]:flex [&>div]:items-center [&>div]:gap-2">
+        <div className="mt-8 flex flex-col gap-8 px-6 text-gray-800 [&>div]:flex [&>div]:items-center [&>div]:gap-2">
           <div>
             <FaReply />
-            <span>Reply</span>
+            <p>Javob yozish</p>
           </div>
           <div>
             <FaShare />
-            <span>Forward</span>
+            <p>Uzatish</p>
           </div>
           <div>
             <FaLink />
-            <span>Copy link to message</span>
+            <p>Havolani nusxalash</p>
           </div>
           <div>
             <FaThumbtack />
-            <span>Pin</span>
+            <p>Qadash</p>
           </div>
           <div>
             <FaCopy />
-            <span>Copy text</span>
+            <p>Nusxalash</p>
           </div>
           <div>
             <FaFileCode />
-            <span>View source</span>
+            <p>Manbani ko‘rish</p>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -400,12 +400,12 @@ function FeaturesDesktop() {
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
-            className="relative rounded-2xl transition-colors hover:bg-gray-800/30"
+            className="relative rounded-2xl transition-colors hover:bg-brand-600/30"
           >
             {featureIndex === selectedIndex && (
               <motion.div
                 layoutId="activeBackground"
-                className="absolute inset-0 bg-gray-800"
+                className="absolute inset-0 bg-brand-600"
                 initial={{ borderRadius: 16 }}
               />
             )}
@@ -555,20 +555,20 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for investing all your money"
-      className="bg-brand py-20 sm:py-32"
+      className="bg-brand-700 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Xufyona va mustaqil muloqot uchun kerakli barcha narsa. O`zingiz
-            sinab ko`ring.
+            Xufyona va mustaqil muloqot uchun kerakli barcha narsa. O‘zingiz
+            sinab ko‘ring.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
             Biz bu platformani kuzatuv, monetizatsiya yoki senzuraga uchrashni
             istamaydigan jamoalar, faollar, dasturchilar va mustaqil
             fikrlaydigan odamlar uchun ishlab chiqdik. Agar boshqa platformalar
-            murosaga kelsa, biz boshqa yo`ldan boramiz. Agar maxfiylik muhim
-            bo`lsa, biz uni o`rnatamiz.
+            murosaga kelsa, biz boshqa yo‘ldan boramiz. Agar maxfiylik muhim
+            bo‘lsa, biz uni o‘rnatamiz.
           </p>
         </div>
       </Container>

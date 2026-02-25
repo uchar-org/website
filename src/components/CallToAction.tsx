@@ -7,7 +7,7 @@ export function CallToAction() {
   return (
     <section
       id="get-free-apps-today"
-      className="relative overflow-hidden bg-gray-900 py-20 sm:py-28"
+      className="relative overflow-hidden bg-brand-700 py-20 sm:py-28"
     >
       <div className="absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
         <CircleBackground color="#fff" className="animate-spin-slower" />
@@ -20,8 +20,8 @@ export function CallToAction() {
           </h2>
           <p className="mt-4 text-lg text-gray-300">
             Boshlash uchun bir daqiqadan kamroq vaqt ketadi. Ilovani yuklab
-            oling, hisobingizni yarating va ma`lumotlaringiz o`zingizniki bo`lib
-            qoladigan markazlashmagan tarmoqqa qo`shiling — shifrlangan,
+            oling, hisobingizni yarating va ma{"'"}lumotlaringiz o‘zingizniki
+            bo‘lib qoladigan markazlashmagan tarmoqqa qo‘shiling — shifrlangan,
             federatsiyalangan va kuzatuvdan xoli.
           </p>
           <div className="mt-8 flex justify-center gap-5">
