@@ -10,7 +10,7 @@ const faqs = [
     {
       question: 'Platforma markazlashganmi?',
       answer:
-        "Yo‘q. U to‘liq markazlashtirilmagan. Mavjud serverga qo‘shilishingiz yoki o‘zingiznikini ishga tushirishingiz mumkin. Federatsiya hech qanday kompaniya sizning ma'lumotlaringizga egalik qilmasligini yoki tajribangizni nazorat qilmasligini anglatadi.",
+        "Yo‘q. U to‘liq markazlashtirilmagan. Mavjud serverga qo‘shilishingiz yoki o‘zingiznikini ishga tushirishingiz mumkin. Federatsiya hech qanday kompaniya sizning maʼlumotlaringizga egalik qilmasligini yoki tajribangizni nazorat qilmasligini anglatadi.",
     },
     {
       question: 'Uni barcha qurilmalarimda ishlata olamanmi?',
@@ -37,9 +37,9 @@ const faqs = [
   ],
   [
     {
-      question: "Ma'lumotlarim biror marta sotilganmi yoki kuzatilganmi?",
+      question: "Maʼlumotlarim biror marta sotilganmi yoki kuzatilganmi?",
       answer:
-        "Hech qachon. Ma'lumotlaringiz shifrlangan va hech qachon ulashilmaydi yoki monetizatsiya qilinmaydi. Biz foydalanish xatti-harakatlarini kuzatmaymiz yoki tashqi tahlillarni kiritmaymiz.",
+        "Hech qachon. Maʼlumotlaringiz shifrlangan va hech qachon ulashilmaydi yoki monetizatsiya qilinmaydi. Biz foydalanish xatti-harakatlarini kuzatmaymiz yoki tashqi tahlillarni kiritmaymiz.",
     },
     {
       question: 'Ochiq kodlimi?',

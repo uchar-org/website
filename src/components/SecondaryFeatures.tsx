@@ -6,13 +6,13 @@ const features = [
   {
     name: 'Cheklovsiz muloqot qilish',
     description:
-      "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qat'i nazar, platformamiz siz bilan tarozini o‘lchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz.",
+      "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qat'i nazar, platformamiz siz bilan tarozini oʻlchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz.",
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Federativ va kelajakka mo‘ljallangan',
+    name: 'Federativ va kelajakka moʻljallangan',
     description:
-      'O‘z serveringizni ishga tushiring yoki mavjud serverga ulaning. Matritsa federatsiyasi suhbatlaringiz tashkilot, mamlakat va platformalar bo‘ylab tarqalishiga imkon beradi — birorta ham muvaffaqiyatsizlik nuqtasi yo‘q.',
+      'Oʻz serveringizni ishga tushiring yoki mavjud serverga ulaning. Matritsa federatsiyasi suhbatlaringiz tashkilot, mamlakat va platformalar boʻylab tarqalishiga imkon beradi — birorta ham muvaffaqiyatsizlik nuqtasi yoʻq.',
     icon: DeviceCardsIcon,
   },
   {
@@ -24,19 +24,19 @@ const features = [
   {
     name: 'Ishonchli tarmoqni kengaytiring',
     description:
-      'Jamoadoshlar, do‘stlar yoki hamkorlarni jalb qiling. Xavfsiz takliflardan foydalaning, kalitlar bilan tasdiqlang va maxfiylikka putur yetkazmasdan ekotizimingizni kengaytiring.',
+      'Jamoadoshlar, doʻstlar yoki hamkorlarni jalb qiling. Xavfsiz takliflardan foydalaning, kalitlar bilan tasdiqlang va maxfiylikka putur yetkazmasdan ekotizimingizni kengaytiring.',
     icon: DeviceListIcon,
   },
   {
     name: 'Boshidan oxirigacha shifrlash va anonimlik',
     description:
-      'Suhbatlaringiz harbiy shifrlash bilan himoyalangan. Siz nima deyayotganingizni hatto biz ham ko‘ra olmaymiz va buni xohlamaymiz ham.',
+      'Suhbatlaringiz harbiy shifrlash bilan himoyalangan. Siz nima deyayotganingizni hatto biz ham koʻra olmaymiz va buni xohlamaymiz ham.',
     icon: DeviceLockIcon,
   },
   {
     name: 'Intellektual faoliyat boshqaruv panellari',
     description:
-      "Xona faolligi, xabarlar hajmi, server holati va federatsiya ulanishlarini maxfiylikni saqlagan holda kuzatib boring. Sizga imkoniyat beruvchi tahliliy ma'lumotlar.",
+      "Xona faolligi, xabarlar hajmi, server holati va federatsiya ulanishlarini maxfiylikni saqlagan holda kuzatib boring. Sizga imkoniyat beruvchi tahliliy maʼlumotlar.",
     icon: DeviceChartIcon,
   },
 ]
@@ -196,7 +196,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Endi tarmog‘ingizni yaratish vaqti keldi.
+            Endi tarmogʻingizni yaratish vaqti keldi.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             Markazlashgan boshqaruv va raqamli kuzatuv dunyosida suveren,

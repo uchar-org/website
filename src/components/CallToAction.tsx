@@ -20,8 +20,8 @@ export function CallToAction() {
           </h2>
           <p className="mt-4 text-lg text-gray-300">
             Boshlash uchun bir daqiqadan kamroq vaqt ketadi. Ilovani yuklab
-            oling, hisobingizni yarating va ma{"'"}lumotlaringiz o‘zingizniki
-            bo‘lib qoladigan markazlashmagan tarmoqqa qo‘shiling — shifrlangan,
+            oling, hisobingizni yarating va maʼlumotlaringiz oʻzingizniki
+            boʻlib qoladigan markazlashmagan tarmoqqa qoʻshiling — shifrlangan,
             federatsiyalangan va kuzatuvdan xoli.
           </p>
           <div className="mt-8 flex justify-center gap-5">

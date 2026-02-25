@@ -40,21 +40,21 @@ const features = [
   {
     name: 'Asli markazlashmagan',
     description:
-      "Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida ma'lumotlaringiz o‘z-o‘zini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qo‘shilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yo‘q. Sotuvchi qulfi yo‘q.",
+      "Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida maʼlumotlaringiz oʻz-oʻzini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qoʻshilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yoʻq. Sotuvchi qulfi yoʻq.",
     icon: DeviceUserIcon,
     screen: ChatScreen,
   },
   {
     name: 'Boshidan oxirigacha shifrlash',
     description:
-      'Xabarlar, ovozli qo‘ng‘iroqlar, video - barchasi Olm va Megolm kabi eng so‘nggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi.',
+      'Xabarlar, ovozli qoʻngʻiroqlar, video - barchasi Olm va Megolm kabi eng soʻnggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi.',
     icon: DeviceNotificationIcon,
     screen: E2EEncryptionScreen,
   },
   {
-    name: 'Ilg‘or foydalanuvchilar uchun kengaytirilgan imkoniyatlar',
+    name: 'Ilgʻor foydalanuvchilar uchun kengaytirilgan imkoniyatlar',
     description:
-      'Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa ko‘plab imkoniyatlar. Xakerlar jamoasi, DAO yoki o‘yin gildiyasini boshqarayotgan bo‘lsangiz ham — barchasi siz uchun mujassam.',
+      'Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa koʻplab imkoniyatlar. Xakerlar jamoasi, DAO yoki oʻyin gildiyasini boshqarayotgan boʻlsangiz ham — barchasi siz uchun mujassam.',
     icon: DeviceTouchIcon,
     screen: PowerFeatures,
   },
@@ -186,9 +186,9 @@ const bodyAnimation: MotionProps = {
 
 type ScreenProps =
   | {
-      animated: true
-      custom: CustomAnimationProps
-    }
+    animated: true
+    custom: CustomAnimationProps
+  }
   | { animated?: false }
 
 function ChatScreen(props: ScreenProps) {
@@ -236,7 +236,7 @@ function ChatScreen(props: ScreenProps) {
             <ChatMessage
               className="mt-4"
               user={{ fullName: 'Abdusattor', color: 'red' }}
-              message="Salom qo‘shni"
+              message="Salom qoʻshni"
             />
             <ChatMessage
               user={{ fullName: 'Abdusattor', color: 'red' }}
@@ -285,7 +285,7 @@ function E2EEncryptionScreen(props: ScreenProps) {
 
           <div className="flex flex-col items-center gap-2">
             <FaVideo />
-            <span className="text-base">Qo‘ng‘iroq qilish</span>
+            <span className="text-base">Qoʻngʻiroq qilish</span>
           </div>
         </div>
 
@@ -356,7 +356,7 @@ function PowerFeatures(props: ScreenProps) {
           </div>
           <div>
             <FaFileCode />
-            <p>Manbani ko‘rish</p>
+            <p>Manbani koʻrish</p>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -560,15 +560,15 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Xufyona va mustaqil muloqot uchun kerakli barcha narsa. O‘zingiz
-            sinab ko‘ring.
+            Xufyona va mustaqil muloqot uchun kerakli barcha narsa. Oʻzingiz
+            sinab koʻring.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
             Biz bu platformani kuzatuv, monetizatsiya yoki senzuraga uchrashni
             istamaydigan jamoalar, faollar, dasturchilar va mustaqil
             fikrlaydigan odamlar uchun ishlab chiqdik. Agar boshqa platformalar
-            murosaga kelsa, biz boshqa yo‘ldan boramiz. Agar maxfiylik muhim
-            bo‘lsa, biz uni o‘rnatamiz.
+            murosaga kelsa, biz boshqa yoʻldan boramiz. Agar maxfiylik muhim
+            boʻlsa, biz uni oʻrnatamiz.
           </p>
         </div>
       </Container>
