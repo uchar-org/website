@@ -49,7 +49,7 @@ const faqs = [
     {
       question: 'Matrix va boshqa xabar almashish ilovalarining farqi nimada?',
       answer:
-        "An'anaviy messenjerlardan farqli o‘laroq, Matrix markazlashtirilmagan - sizning suhbatlaringizni boshqaradigan markaziy server yo‘q. U federatsiyani qo‘llab-quvvatlaydi, shuning uchun har kim o‘z serverini ishga tushirishi va boshqalarga ulanishi mumkin. Bundan tashqari, hamma narsa boshidan oxirigacha shifrlangan, kengaytiriladigan va ochiq kodli - na devor bilan o‘ralgan bog‘lar, na kuzatuv kapitalizmi mavjud.",
+        "Anʼanaviy messenjerlardan farqli o‘laroq, Matrix markazlashtirilmagan - sizning suhbatlaringizni boshqaradigan markaziy server yo‘q. U federatsiyani qo‘llab-quvvatlaydi, shuning uchun har kim o‘z serverini ishga tushirishi va boshqalarga ulanishi mumkin. Bundan tashqari, hamma narsa boshidan oxirigacha shifrlangan, kengaytiriladigan va ochiq kodli - na devor bilan o‘ralgan bog‘lar, na kuzatuv kapitalizmi mavjud.",
     },
   ],
 ]
