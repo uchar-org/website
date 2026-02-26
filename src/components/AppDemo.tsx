@@ -8,7 +8,7 @@ import { FaVideo } from '@react-icons/all-files/fa/FaVideo'
 export function AppDemo() {
   return (
     <AppScreen>
-      <AppScreen.Body className="bg-gray-900 px-5 text-white">
+      <AppScreen.Body className="bg-brand px-5 text-white">
         <div className="mb-2 text-xl font-bold">Chats</div>
 
         <div className="flex">

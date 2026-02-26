@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { cn } from '@/lib/cn'
 import { FaUser } from '@react-icons/all-files/fa/FaUser'
 import { FaSearch } from '@react-icons/all-files/fa/FaSearch'
+import Image from 'next/image'
 
 function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -52,7 +53,8 @@ export function AppScreen({
     <div className={clsx('flex flex-col', className)} {...props}>
       <div className="flex items-center justify-between px-4 pt-4 text-white">
         <FaUser />
-        <Logo className="h-6 flex-none" />
+        {/* <Logo className="h-6 flex-none" /> */}
+        <Image src="/favicon.svg" width={52} height={52} alt="Logo-uchar" />
         <FaSearch />
       </div>
       {children}

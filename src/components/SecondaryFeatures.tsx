@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Communicate without limits',
+    name: 'Cheklovsiz muloqot qilish',
     description:
-      'Whether you’re running a community of 5 or 50,000 — our platform scales with you. Your messages, your rooms, your control.',
+      "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qat'i nazar, platformamiz siz bilan tarozini oʻlchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz.",
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Federated & future-proof',
+    name: 'Federativ va kelajakka moʻljallangan',
     description:
-      'Deploy your own server or join an existing one. Matrix federation lets your conversations span across organizations, countries, and platforms — no single point of failure.',
+      'Oʻz serveringizni ishga tushiring yoki mavjud serverga ulaning. Matritsa federatsiyasi suhbatlaringiz tashkilot, mamlakat va platformalar boʻylab tarqalishiga imkon beradi — birorta ham muvaffaqiyatsizlik nuqtasi yoʻq.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Real-time sync across all devices',
+    name: 'Barcha qurilmalarda real vaqt rejimida sinxronlash',
     description:
-      'Send, receive, and sync messages instantly across mobile, desktop, and web. Always secure, always encrypted.',
+      'Mobil, desktop va veb orqali xabarlarni bir zumda yuborish, qabul qilish va sinxronlash. Har doim xavfsiz, har doim shifrlangan.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Grow your trusted network',
+    name: 'Ishonchli tarmoqni kengaytiring',
     description:
-      'Bring in teammates, friends, or collaborators. Use secure invites, verify with keys, and expand your ecosystem without compromising privacy.',
+      'Jamoadoshlar, doʻstlar yoki hamkorlarni jalb qiling. Xavfsiz takliflardan foydalaning, kalitlar bilan tasdiqlang va maxfiylikka putur yetkazmasdan ekotizimingizni kengaytiring.',
     icon: DeviceListIcon,
   },
   {
-    name: 'End-to-end encrypted and anonymized',
+    name: 'Boshidan oxirigacha shifrlash va anonimlik',
     description:
-      'Your conversations are protected by military-grade encryption. Not even we can see what you’re saying — and we don’t want to.',
+      'Suhbatlaringiz harbiy shifrlash bilan himoyalangan. Siz nima deyayotganingizni hatto biz ham koʻra olmaymiz va buni xohlamaymiz ham.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Intelligent activity dashboards',
+    name: 'Intellektual faoliyat boshqaruv panellari',
     description:
-      'Track room engagement, message volume, server health, and federation links — without compromising on privacy. Insights that empower you.',
+      "Xona faolligi, xabarlar hajmi, server holati va federatsiya ulanishlarini maxfiylikni saqlagan holda kuzatib boring. Sizga imkoniyat beruvchi tahliliy maʼlumotlar.",
     icon: DeviceChartIcon,
   },
 ]
@@ -196,10 +196,12 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your network.
+            Endi tarmogʻingizni yaratish vaqti keldi.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            In a world of centralized control and digital surveillance, creating a sovereign, secure communication space is no longer optional — it’s essential. Start building your private, encrypted network today.
+            Markazlashgan boshqaruv va raqamli kuzatuv dunyosida suveren,
+            xavfsiz aloqa makonini yaratish endi ixtiyoriy emas - bu juda muhim.
+            Bugunoq maxfiy, shifrlangan tarmoq yaratishni boshlang.
           </p>
         </div>
         <ul

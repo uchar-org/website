@@ -13,6 +13,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import Image from 'next/image'
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -62,7 +63,7 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <Image src="/logo.svg" width={64} height={64} alt="Favicon" />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -108,20 +109,22 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="/#features">
-                              Features
+                            <MobileNavLink href="#features">
+                              Xususiyatlar
                             </MobileNavLink>
-                            <MobileNavLink href="/#reviews">
-                              Reviews
+                            <MobileNavLink href="#faqs">
+                              Savol-javoblar
                             </MobileNavLink>
-                            <MobileNavLink href="/#pricing">
-                              Pricing
+                            <MobileNavLink href="/privacy">
+                              Maxfiylik
                             </MobileNavLink>
-                            <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="/list" variant="outline">
-                              Choose Server
+                            <Button
+                              href="https://chat.uchar.uz"
+                              variant="outline"
+                            >
+                              Kirish
                             </Button>
                           </div>
                         </PopoverPanel>
@@ -133,7 +136,7 @@ export function Header() {
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
               <Button href="https://chat.uchar.uz" variant="outline">
-                Sign in
+                Kirish
               </Button>
               {/* <Button href="#">Download</Button> */}
             </div>

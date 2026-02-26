@@ -3,53 +3,53 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'Is this really end-to-end encrypted?',
+      question: 'Bu haqiqatan ham boshidan oxirigacha shifrlanganmi?',
       answer:
-        'Yes. All messages, calls, and media are end-to-end encrypted by default using the Matrix protocol’s Olm and Megolm cryptographic libraries.',
+        'Ha. Barcha xabarlar, qo‘ng‘iroqlar va mediafayllar standart tarzda Matrix protokolining Olm va Megolm kriptografik kutubxonalari yordamida uzluksiz shifrlanadi.',
     },
     {
-      question: 'Is the platform centralized?',
+      question: 'Platforma markazlashganmi?',
       answer:
-        'No. It’s fully decentralized. You can join an existing server or run your own. Federation means no single company owns your data or controls your experience.',
+        "Yo‘q. U to‘liq markazlashtirilmagan. Mavjud serverga qo‘shilishingiz yoki o‘zingiznikini ishga tushirishingiz mumkin. Federatsiya hech qanday kompaniya sizning maʼlumotlaringizga egalik qilmasligini yoki tajribangizni nazorat qilmasligini anglatadi.",
     },
     {
-      question: 'Can I use it on all my devices?',
+      question: 'Uni barcha qurilmalarimda ishlata olamanmi?',
       answer:
-        'Absolutely. Our app works on iOS, Android, desktop, and web. Your conversations sync seamlessly across all your devices.',
-    },
-  ],
-  [
-    {
-      question: 'Can I host my own server?',
-      answer:
-        'Yes — that’s one of the core strengths of Matrix. You can deploy your own homeserver using Synapse or Dendrite easily with Uchar\'s provided infrastructure via NixOS, and manage your own identity server if desired.',
-    },
-    {
-      question: 'Can I use it with other platforms?',
-      answer:
-        'You can bridge Matrix with other tools like Slack, Discord, Telegram, IRC, and more. Our platform is open and interoperable.',
-    },
-    {
-      question: 'Does it support groups and voice/video calls?',
-      answer:
-        'Yes. You can create public or private rooms, threads, and communities (Spaces), and start encrypted voice or video calls — one-on-one or in groups.',
+        'Albatta. Ilovamiz iOS, Android, desktop va vebda ishlaydi. Suhbatlaringiz barcha qurilmalaringizda muammosiz sinxronlanadi.',
     },
   ],
   [
     {
-      question: 'Is my data ever sold or tracked?',
+      question: 'O‘z serverimni joylashtira olamanmi?',
       answer:
-        'Never. Your data is encrypted and never shared or monetized. We don’t track usage behavior or embed third-party analytics.',
+        'Ha, bu Matriksning asosiy afzalliklaridan biri. NixOS orqali Uchar tomonidan taqdim etilgan infratuzilma bilan Synapse yoki Dendrite yordamida o‘z uy serveringizni osongina joylashtirishingiz va istasangiz, shaxsiy serveringizni boshqarishingiz mumkin.',
     },
     {
-      question: 'Is it open source?',
+      question: 'Boshqa platformalar bilan ishlata olamanmi?',
       answer:
-        'Yes. Both the Matrix protocol and our client/infra are open source. You can inspect, audit, or contribute to the code.',
+        'Matrixni Slack, Discord, Telegram, IRC va boshqa vositalar bilan bog‘lashingiz mumkin. Bizning platformamiz ochiq va o‘zaro ishlaydigan.',
     },
     {
-      question: 'What’s the difference between Matrix and other messaging apps?',
+      question: 'Guruhlar va ovozli/video chaqiruvlar ishlaydimi?',
       answer:
-        'Unlike traditional messengers, Matrix is decentralized — there’s no central server controlling your conversations. It supports federation, so anyone can run their own server and still connect to others. Plus, everything is end-to-end encrypted, extensible, and open-source — no walled gardens, no surveillance capitalism.',
+        'Ha. Siz ommaviy yoki shaxsiy xonalar, muhokamalar va hamjamiyatlar (Spaces) yaratishingiz, shuningdek, shifrlangan ovozli yoki video qo‘ng‘iroqlarni boshlashingiz mumkin — xoh yakka tartibda, xoh guruh bo‘lib.',
+    },
+  ],
+  [
+    {
+      question: "Maʼlumotlarim biror marta sotilganmi yoki kuzatilganmi?",
+      answer:
+        "Hech qachon. Maʼlumotlaringiz shifrlangan va hech qachon ulashilmaydi yoki monetizatsiya qilinmaydi. Biz foydalanish xatti-harakatlarini kuzatmaymiz yoki tashqi tahlillarni kiritmaymiz.",
+    },
+    {
+      question: 'Ochiq kodlimi?',
+      answer:
+        'Ha. Matrix protokoli ham, bizning dasturiy ta‘minotimiz/infratuzilmamiz ham ochiq manbalidir. Kodni ko‘zdan kechirishingiz, tekshirishingiz yoki uni rivojlantirishga hissa qo‘shishingiz mumkin.',
+    },
+    {
+      question: 'Matrix va boshqa xabar almashish ilovalarining farqi nimada?',
+      answer:
+        "An'anaviy messenjerlardan farqli o‘laroq, Matrix markazlashtirilmagan - sizning suhbatlaringizni boshqaradigan markaziy server yo‘q. U federatsiyani qo‘llab-quvvatlaydi, shuning uchun har kim o‘z serverini ishga tushirishi va boshqalarga ulanishi mumkin. Bundan tashqari, hamma narsa boshidan oxirigacha shifrlangan, kengaytiriladigan va ochiq kodli - na devor bilan o‘ralgan bog‘lar, na kuzatuv kapitalizmi mavjud.",
     },
   ],
 ]
@@ -59,7 +59,7 @@ export function Faqs() {
     <section
       id="faqs"
       aria-labelledby="faqs-title"
-      className="border-t border-gray-200 py-20 sm:py-32 shadow-lg shadow-gray-900/5"
+      className="border-t border-gray-200 py-20 shadow-lg shadow-gray-900/5 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
@@ -67,15 +67,15 @@ export function Faqs() {
             id="faqs-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Frequently asked questions
+            Tez-tez beriladigan savollar
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            If you have anything else you want to ask,{' '}
+            Agar yana biror narsa so‘ramoqchi bo‘lsangiz,{' '}
             <a
               href="mailto:support@uchar.uz"
               className="text-gray-900 underline"
             >
-              reach out to us
+              bizga murojaat qilmoq
             </a>
             .
           </p>
