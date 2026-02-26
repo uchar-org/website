@@ -1,17 +1,20 @@
 # Refer to this for more:
 # https://www.reddit.com/r/NixOS/comments/1fxf0am/setting_up_a_nextjs_project_as_a_systemd_service/
-flake: {
+flake:
+{
   config,
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   # Shortcut config
   cfg = config.services.uchar.website;
 
   # Packaged server
   server = flake.packages.${pkgs.stdenv.hostPlatform.system}.ssr;
-in {
+in
+{
   options = with lib; {
     services.uchar.website = {
       enable = mkEnableOption ''
@@ -32,13 +35,14 @@ in {
 
         alias = mkOption {
           type = with types; listOf str;
-          default = [];
-          example = ["www.uchar.uz"];
+          default = [ ];
+          example = [ "www.uchar.uz" ];
           description = "List of domain aliases to add to domain";
         };
 
         proxy = mkOption {
-          type = with types;
+          type =
+            with types;
             nullOr (enum [
               "nginx"
               "caddy"
@@ -92,7 +96,9 @@ in {
 
   config = lib.mkIf cfg.enable {
     warnings = [
-      (lib.mkIf (cfg.proxy.enable && cfg.proxy.domain == null) "services.uchar.website.proxy.domain must be set in order to properly generate certificate!")
+      (lib.mkIf (
+        cfg.proxy.enable && cfg.proxy.domain == null
+      ) "services.uchar.website.proxy.domain must be set in order to properly generate certificate!")
     ];
 
     users.users.${cfg.user} = {
@@ -101,11 +107,11 @@ in {
       group = cfg.group;
     };
 
-    users.groups.${cfg.group} = {};
+    users.groups.${cfg.group} = { };
 
     systemd.services.uchar-www = {
       description = "Official website of Uchar";
-      documentation = ["https://github.com/uchar/website"];
+      documentation = [ "https://github.com/uchar/website" ];
 
       environment = {
         PORT = "${toString cfg.port}";
@@ -113,9 +119,9 @@ in {
         NODE_ENV = "production";
       };
 
-      after = ["network-online.target"];
-      wants = ["network-online.target"];
-      wantedBy = ["multi-user.target"];
+      after = [ "network-online.target" ];
+      wants = [ "network-online.target" ];
+      wantedBy = [ "multi-user.target" ];
 
       serviceConfig = {
         User = cfg.user;
@@ -129,7 +135,7 @@ in {
           "AF_INET"
           "AF_INET6"
         ];
-        DeviceAllow = ["/dev/stdin r"];
+        DeviceAllow = [ "/dev/stdin r" ];
         DevicePolicy = "strict";
         IPAddressAllow = "localhost";
         LockPersonality = true;
@@ -145,7 +151,7 @@ in {
         ProtectKernelModules = true;
         ProtectKernelTunables = true;
         ProtectSystem = "strict";
-        ReadOnlyPaths = ["/"];
+        ReadOnlyPaths = [ "/" ];
         RemoveIPC = true;
         RestrictAddressFamilies = [
           "AF_NETLINK"
@@ -167,30 +173,36 @@ in {
     };
 
     services.caddy.virtualHosts =
-      lib.mkIf
-      (cfg.enable && cfg.proxy.enable && cfg.proxy.proxy == "nginx")
-      (lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specicy it properly!" {
-        "${cfg.proxy.domain}" = {
-          serverAliases = cfg.proxy.alias;
-          extraConfig = ''
-            reverse_proxy 127.0.0.1:${toString cfg.port}
-          '';
-        };
-      });
+      lib.mkIf (cfg.enable && cfg.proxy.enable && cfg.proxy.proxy == "nginx")
+        (
+          lib.debug.traceIf (builtins.isNull cfg.proxy.domain)
+            "proxy.domain can't be null, please specicy it properly!"
+            {
+              "${cfg.proxy.domain}" = {
+                serverAliases = cfg.proxy.alias;
+                extraConfig = ''
+                  reverse_proxy 127.0.0.1:${toString cfg.port}
+                '';
+              };
+            }
+        );
 
     services.nginx.virtualHosts =
-      lib.mkIf
-      (cfg.enable && cfg.proxy.enable && cfg.proxy.proxy == "nginx")
-      (lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specicy it properly!" {
-        "${cfg.proxy.domain}" = {
-          forceSSL = true;
-          enableACME = true;
-          serverAliases = cfg.proxy.alias;
-          locations."/" = {
-            proxyPass = "http://127.0.0.1:${toString cfg.port}";
-            proxyWebsockets = true;
-          };
-        };
-      });
+      lib.mkIf (cfg.enable && cfg.proxy.enable && cfg.proxy.proxy == "nginx")
+        (
+          lib.debug.traceIf (builtins.isNull cfg.proxy.domain)
+            "proxy.domain can't be null, please specicy it properly!"
+            {
+              "${cfg.proxy.domain}" = {
+                forceSSL = true;
+                enableACME = true;
+                serverAliases = cfg.proxy.alias;
+                locations."/" = {
+                  proxyPass = "http://127.0.0.1:${toString cfg.port}";
+                  proxyWebsockets = true;
+                };
+              };
+            }
+        );
   };
 }
