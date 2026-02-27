@@ -6,7 +6,7 @@ const features = [
   {
     name: 'Cheklovsiz muloqot qilish',
     description:
-      "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qat'i nazar, platformamiz siz bilan tarozini oʻlchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz.",
+      "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qatʼi nazar, platformamiz siz bilan tarozini oʻlchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz.",
     icon: DeviceArrowIcon,
   },
   {

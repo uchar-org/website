@@ -23,7 +23,7 @@ export function Footer() {
               />
               <div className="ml-4">
                 <p className="text-base font-semibold">Uchar</p>
-                <p className="mt-1 text-sm">O`z efiringizni kashf eting.</p>
+                <p className="mt-1 text-sm">Oʻz efiringizni kashf eting.</p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">
