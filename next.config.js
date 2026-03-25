@@ -2,10 +2,10 @@ const createMDX = require('@next/mdx')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   images: {
-    unoptimized: true,
+    unoptimized: false,
   },
 }
 

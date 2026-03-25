@@ -8,6 +8,8 @@ let
   base = flake.packages.${system}.default;
 in
 pkgs.mkShell {
+  inputsFrom = [base];
+
   packages = with pkgs; [
     # Nix
     nixd

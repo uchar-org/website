@@ -16,6 +16,15 @@ let
 
   # All source codes
   source = ./.;
+
+  # Executable
+  exec = pkgs.writeShellScript "${manifest.name}-start.sh" ''
+    # Change working directory to script
+    cd "$(dirname "$0")/../lib"
+
+    # Start the stadalone server
+    ${pkgs.lib.getExe pkgs.nodejs} ./server.js
+  '';
 in
 pkgs.stdenv.mkDerivation {
   pname = manifest.name;
@@ -31,6 +40,12 @@ pkgs.stdenv.mkDerivation {
     vips
   ];
 
+  preBuild = ''
+    cp "${
+      pkgs.google-fonts.override { fonts = [ "Inter" ]; }
+    }/share/fonts/truetype/Inter[opsz,wght].ttf" ./src/app/Inter.ttf
+  '';
+
   buildPhase = ''
     # Build the package
     pnpm build
@@ -38,10 +53,32 @@ pkgs.stdenv.mkDerivation {
 
   installPhase = ''
     # Create output directory
-    # mkdir -p $out
+    mkdir -p $out
 
-    # Move all contents
-    cp -r ./out $out
+    cat ./next.config.js
+    ls -la ./.next
+
+    # Copy standalone as library
+    cp -r ./.next/standalone $out/lib
+
+    # Create filler folders
+    mkdir -p $out/lib/.next
+
+    # Copy static contents
+    if [ -d "./.next/static" ]; then
+      cp -R ./.next/static $out/lib/.next/static
+    fi
+
+    # Copy public assets
+    if [ -d "./public" ]; then
+      cp -R ./public $out/lib/public
+    fi
+
+    # Create executable directory
+    mkdir -p $out/bin
+
+    # Copy shell script to executables
+    cp -r ${exec} $out/bin/${manifest.name}-start
   '';
 
   pnpmDeps = pkgs.fetchPnpmDeps {
@@ -51,12 +88,6 @@ pkgs.stdenv.mkDerivation {
     fetcherVersion = 3;
     hash = "sha256-K0Ms3PgSgK0/sulGIw4tBigovSEcZZ6/Mnc2ECjtTLk=";
   };
-
-  preBuild = ''
-    cp "${
-      pkgs.google-fonts.override { fonts = [ "Inter" ]; }
-    }/share/fonts/truetype/Inter[opsz,wght].ttf" ./src/app/Inter.ttf
-  '';
 
   meta = with pkgs.lib; {
     homepage = "https://uchar.uz";

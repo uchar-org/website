@@ -42,11 +42,7 @@
             devShells.default = import ./shell.nix self { inherit pkgs; };
 
             # Output package
-            packages = rec {
-              default = ssr;
-              ssr = pkgs.callPackage ./default-ssr.nix { inherit pkgs; };
-              ssg = pkgs.callPackage ./default-ssg.nix { inherit pkgs; };
-            };
+            packages.default = pkgs.callPackage ./default.nix { inherit pkgs; };
           };
       }
     );
