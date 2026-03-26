@@ -1,4 +1,7 @@
 const createMDX = require('@next/mdx')
+const createNextIntlPlugin = require('next-intl/plugin')
+
+const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,4 +16,4 @@ const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
 })
 
-module.exports = withMDX(nextConfig)
+module.exports = withNextIntl(withMDX(nextConfig))
