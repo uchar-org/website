@@ -12,7 +12,7 @@ let
   cfg = config.services.uchar.website;
 
   # Packaged server
-  server = flake.packages.${pkgs.stdenv.hostPlatform.system}.ssr;
+  server = flake.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
   options = with lib; {
