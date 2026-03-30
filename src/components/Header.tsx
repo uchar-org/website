@@ -13,7 +13,10 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLinks } from '@/components/NavLinks'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import { SelectField } from './Fields'
+import { usePathname, useRouter } from '@/i18n/navigation';
+
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -58,6 +61,32 @@ function MobileNavLink(
 
 export function Header() {
   const t = useTranslations("nav")
+  const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+
+
+  const langs = [
+    {
+      value: "en",
+      label: "English",
+      icon: "🇺🇸",
+    },
+    {
+      value: "ru",
+      label: "Русский",
+      icon: "🇷🇺",
+    },
+    {
+      value: "uz",
+      label: "Oʻzbekcha",
+      icon: "🇺🇿",
+    }
+  ]
+
+  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    router.replace(pathname, { locale: e.target.value });
+  }
 
   return (
     <header>
@@ -72,6 +101,17 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-6">
+            <SelectField
+              className="lg:hidden"
+              onChange={changeLanguage}
+              defaultValue={locale}
+            >
+              {langs.map((lang) => (
+                <option key={lang.value} value={lang.value}>
+                  {lang.icon}
+                </option>
+              ))}
+            </SelectField>
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
@@ -137,6 +177,13 @@ export function Header() {
               )}
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
+              <SelectField onChange={changeLanguage} defaultValue={locale}>
+                {langs.map((lang) => (
+                  <option key={lang.value} value={lang.value}>
+                    {lang.icon + " " + lang.label}
+                  </option>
+                ))}
+              </SelectField>
               <Button href="https://chat.uchar.uz" variant="outline">
                 {t("header.sign_in")}
               </Button>
