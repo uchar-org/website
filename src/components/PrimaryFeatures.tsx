@@ -27,6 +27,7 @@ import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import { Avatar, ChatMessage } from './ChatMessage'
+import { useTranslations } from 'next-intl'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
@@ -38,23 +39,17 @@ interface CustomAnimationProps {
 
 const features = [
   {
-    name: 'Asli markazlashmagan',
-    description:
-      "Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida maʼlumotlaringiz oʻz-oʻzini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qoʻshilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yoʻq. Sotuvchi qulfi yoʻq.",
+    name: "decentralized",
     icon: DeviceUserIcon,
     screen: ChatScreen,
   },
   {
-    name: 'Boshidan oxirigacha shifrlash',
-    description:
-      'Xabarlar, ovozli qoʻngʻiroqlar, video - barchasi Olm va Megolm kabi eng soʻnggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi.',
+    name: "end_to_end",
     icon: DeviceNotificationIcon,
     screen: E2EEncryptionScreen,
   },
   {
-    name: 'Ilgʻor foydalanuvchilar uchun kengaytirilgan imkoniyatlar',
-    description:
-      'Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa koʻplab imkoniyatlar. Xakerlar jamoasi, DAO yoki oʻyin gildiyasini boshqarayotgan boʻlsangiz ham — barchasi siz uchun mujassam.',
+    name: "power_features",
     icon: DeviceTouchIcon,
     screen: PowerFeatures,
   },
@@ -192,16 +187,18 @@ type ScreenProps =
   | { animated?: false }
 
 function ChatScreen(props: ScreenProps) {
+  const t = useTranslations("chat")
+
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(props.animated ? headerAnimation : {})}>
-        <div className="mb-2 text-xl font-bold">Chats</div>
+        <div className="mb-2 text-xl font-bold">{t("chats")}</div>
 
         <div className="flex">
           <div className="flex flex-1 items-center gap-3">
             <Avatar text="H" color="amber" size="medium" className="shrink-0" />
             <div className="flex flex-col justify-center gap-0.5">
-              <div className="text-sm font-bold">Hamjamiyat</div>
+              <div className="text-sm font-bold">{t("community")}</div>
               <div className="text-xs">
                 <strong>Abdusattor</strong>: Ha bugun kechga uchrashamiz
               </div>
@@ -220,7 +217,7 @@ function ChatScreen(props: ScreenProps) {
           <div className="flex items-center">
             <FaArrowLeft className="mr-3" />
             <Avatar text="H" color="amber" size="small" className="mr-2" />
-            <div className="text-sm">Hamjamiyat</div>
+            <div className="text-sm">{t("community")}</div>
             <FaVideo className="ml-auto" />
           </div>
           <div className="mt-3 border-t border-gray-200 pt-5">
@@ -261,6 +258,8 @@ function ChatScreen(props: ScreenProps) {
 }
 
 function E2EEncryptionScreen(props: ScreenProps) {
+  const t = useTranslations("chat")
+
   return (
     <AppScreen className="w-full">
       <MotionAppScreenBody
@@ -273,29 +272,28 @@ function E2EEncryptionScreen(props: ScreenProps) {
           <div className="text-gray-500">@shakhzodkudratov:uchar.uz</div>
           <div className="mx-auto inline-flex items-center gap-1 rounded-xl bg-green-900 px-3 text-sm text-green-200">
             <FaLock />
-            Shifrlangan
+            {t("encrypted")}
           </div>
         </div>
 
         <div className="mb-8 flex justify-evenly gap-4 text-2xl">
           <div className="flex flex-col items-center gap-2">
             <FaBell />
-            <span className="text-base">Ovozsiz qilish</span>
+            <span className="text-base">{t("mute")}</span>
           </div>
 
           <div className="flex flex-col items-center gap-2">
             <FaVideo />
-            <span className="text-base">Qoʻngʻiroq qilish</span>
+            <span className="text-base">{t("call")}</span>
           </div>
         </div>
 
         <div className="flex gap-2 px-6">
           <FaLock className="shrink-0 text-xl" />
           <div>
-            <div>Xabarni shifrlash yoqilgan</div>
+            <div>{t("messages_encrypted")}</div>
             <div className="text-sm text-gray-400">
-              Xabarlar qulf bilan himoyalangan. Ularni ochadigan noyob kalitlar
-              faqat sizda va xabar oluvchilarda bor.
+              {t("messages_secured")}
             </div>
           </div>
         </div>
@@ -305,6 +303,8 @@ function E2EEncryptionScreen(props: ScreenProps) {
 }
 
 function PowerFeatures(props: ScreenProps) {
+  const t = useTranslations("chat")
+
   return (
     <AppScreen className="w-full">
       <MotionAppScreenBody
@@ -336,27 +336,27 @@ function PowerFeatures(props: ScreenProps) {
         <div className="mt-8 flex flex-col gap-8 px-6 text-gray-800 [&>div]:flex [&>div]:items-center [&>div]:gap-2">
           <div>
             <FaReply />
-            <p>Javob yozish</p>
+            <p>{t("reply")}</p>
           </div>
           <div>
             <FaShare />
-            <p>Uzatish</p>
+            <p>{t("forward")}</p>
           </div>
           <div>
             <FaLink />
-            <p>Havolani nusxalash</p>
+            <p>{t("copy_link")}</p>
           </div>
           <div>
             <FaThumbtack />
-            <p>Qadash</p>
+            <p>{t("pin")}</p>
           </div>
           <div>
             <FaCopy />
-            <p>Nusxalash</p>
+            <p>{t("copy")}</p>
           </div>
           <div>
             <FaFileCode />
-            <p>Manbani koʻrish</p>
+            <p>{t("view_source")}</p>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -375,6 +375,7 @@ function usePrevious<T>(value: T) {
 }
 
 function FeaturesDesktop() {
+  const t = useTranslations('home.features.primary')
   let [changeCount, setChangeCount] = useState(0)
   let [selectedIndex, setSelectedIndex] = useState(0)
   let prevIndex = usePrevious(selectedIndex)
@@ -414,11 +415,11 @@ function FeaturesDesktop() {
               <h3 className="mt-6 text-lg font-semibold text-white">
                 <Tab className="text-left data-selected:not-data-focus:outline-hidden">
                   <span className="absolute inset-0 rounded-2xl" />
-                  {feature.name}
+                  {t(`${feature.name}.title`)}
                 </Tab>
               </h3>
               <p className="mt-2 text-sm text-gray-400">
-                {feature.description}
+                {t(`${feature.name}.description`)}
               </p>
             </div>
           </div>
@@ -428,7 +429,7 @@ function FeaturesDesktop() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <CircleBackground color="#13B5C8" className="animate-spin-slower" />
         </div>
-        <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
+        <PhoneFrame className="z-10 mx-auto w-full max-w-91.5">
           <TabPanels as={Fragment}>
             <AnimatePresence
               initial={false}
@@ -457,6 +458,7 @@ function FeaturesDesktop() {
 }
 
 function FeaturesMobile() {
+  const t = useTranslations('home.features.primary')
   let [activeIndex, setActiveIndex] = useState(0)
   let slideContainerRef = useRef<React.ElementRef<'div'>>(null)
   let slideRefs = useRef<Array<React.ElementRef<'div'>>>([])
@@ -496,7 +498,7 @@ function FeaturesMobile() {
       >
         {features.map((feature, featureIndex) => (
           <div
-            key={featureIndex}
+            key={feature.name}
             ref={(ref) => {
               ref && (slideRefs.current[featureIndex] = ref)
             }}
@@ -509,16 +511,16 @@ function FeaturesMobile() {
                   className={featureIndex % 2 === 1 ? 'rotate-180' : undefined}
                 />
               </div>
-              <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
+              <PhoneFrame className="relative mx-auto w-full max-w-91.5">
                 <feature.screen />
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-brand-600/95 p-6 backdrop-blur-sm sm:p-10">
                 <feature.icon className="h-8 w-8" />
                 <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
-                  {feature.name}
+                  {t(`${feature.name}.title`)}
                 </h3>
                 <p className="mt-2 text-sm text-gray-400">
-                  {feature.description}
+                  {t(`${feature.name}.description`)}
                 </p>
               </div>
             </div>
@@ -551,6 +553,8 @@ function FeaturesMobile() {
 }
 
 export function PrimaryFeatures() {
+  const t = useTranslations("home.features.primary")
+
   return (
     <section
       id="features"
@@ -560,15 +564,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Xufyona va mustaqil muloqot uchun kerakli barcha narsa. Oʻzingiz
-            sinab koʻring.
+            {t("title")}
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Biz bu platformani kuzatuv, monetizatsiya yoki senzuraga uchrashni
-            istamaydigan jamoalar, faollar, dasturchilar va mustaqil
-            fikrlaydigan odamlar uchun ishlab chiqdik. Agar boshqa platformalar
-            murosaga kelsa, biz boshqa yoʻldan boramiz. Agar maxfiylik muhim
-            boʻlsa, biz uni oʻrnatamiz.
+            {t("description")}
           </p>
         </div>
       </Container>

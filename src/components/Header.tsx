@@ -11,9 +11,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -57,6 +57,8 @@ function MobileNavLink(
 }
 
 export function Header() {
+  const t = useTranslations("nav")
+
   return (
     <header>
       <nav>
@@ -110,13 +112,13 @@ export function Header() {
                         >
                           <div className="space-y-4">
                             <MobileNavLink href="#features">
-                              Xususiyatlar
+                              {t("links.features")}
                             </MobileNavLink>
                             <MobileNavLink href="#faqs">
-                              Savol-javoblar
+                              {t("links.faqs")}
                             </MobileNavLink>
                             <MobileNavLink href="/privacy">
-                              Maxfiylik
+                              {t("links.privacy")}
                             </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
@@ -124,7 +126,7 @@ export function Header() {
                               href="https://chat.uchar.uz"
                               variant="outline"
                             >
-                              Kirish
+                              {t("header.sign_in")}
                             </Button>
                           </div>
                         </PopoverPanel>
@@ -136,7 +138,7 @@ export function Header() {
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
               <Button href="https://chat.uchar.uz" variant="outline">
-                Kirish
+                {t("header.sign_in")}
               </Button>
               {/* <Button href="#">Download</Button> */}
             </div>

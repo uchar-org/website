@@ -1,6 +1,131 @@
 {
-    "home": {
-        "welcome": "Welcome to our application!",
-        "description": "This is the home page where you can find the latest updates and features."
+  "chat": {
+    "chats": "Chats",
+    "community": "Community",
+    "encrypted": "Encrypted",
+    "mute": "Mute",
+    "call": "Call",
+    "messages_encrypted": "Message encryption enabled",
+    "messages_secured": "Messages are secured with locks. Only you and the recipients have the unique keys to unlock them.",
+    "reply": "Reply",
+    "forward": "Forward",
+    "copy_link": "Copy link to message",
+    "pin": "Pin",
+    "copy": "Copy text",
+    "view_source": "View source"
+  },
+  "nav": {
+    "links": {
+      "features": "Features",
+      "reviews": "Reviews",
+      "pricing": "Pricing",
+      "privacy": "Privacy",
+      "faqs": "FAQs"
+    },
+    "header": {
+      "choose_server": "Choose a Server",
+      "sign_in": "Sign In"
+    },
+    "footer": {
+      "title": "Feel your own ether.",
+      "copyright": "Copyright {date}. All rights reserved."
     }
+  },
+  "home": {
+    "hero": {
+      "title": "Experience your own <guide>ether</guide>.",
+      "description": "A privacy-first, decentralized social platform designed to empower communities and protect your data — no ads, no tracking, just secure communication.",
+      "featured": "As featured in:"
+    },
+    "features": {
+      "primary": {
+        "title": "Everything you need for private, sovereign communication. Try it yourself.",
+        "description": "We designed this platform for communities, activists, developers, and independent thinkers — people who don’t want to be tracked, monetized, or censored. If other platforms compromise, we go the other way. If privacy matters, we build it in.",
+        "decentralized": {
+          "title": "Decentralized by Default",
+          "description": "Your conversations don’t belong on someone else’s server. With Matrix, your data stays on your terms — self-host, federate, or join trusted instances. No central authority. No vendor lock-in."
+        },
+        "end_to_end": {
+          "title": "End-to-End Encryption",
+          "description": "Messages, voice calls, video — all encrypted with the latest protocols like Olm and Megolm. Your communication stays private, whether you’re chatting one-on-one or collaborating in global rooms."
+        },
+        "power_features": {
+          "title": "Power Features for Power Users",
+          "description": "Threaded conversations, widgets, bots, VoIP, reactions, and more. Whether you’re running a hacker collective, a DAO, or a gaming guild — you’re covered."
+        }
+      },
+      "secondary": {
+        "title": "Now is the time to build your network.",
+        "description": "In a world of centralized control and digital surveillance, creating a sovereign, secure communication space is no longer optional — it’s essential. Start building your private, encrypted network today.",
+        "communication": {
+          "title": "Communicate without limits",
+          "description": "Whether you’re running a community of 5 or 50,000 — our platform scales with you. Your messages, your rooms, your control."
+        },
+        "federated": {
+          "title": "Federated & future-proof",
+          "description": "Deploy your own server or join an existing one. Matrix federation lets your conversations span across organizations, countries, and platforms — no single point of failure."
+        },
+        "real_time": {
+          "title": "Real-time sync across all devices",
+          "description": "Send, receive, and sync messages instantly across mobile, desktop, and web. Always secure, always encrypted."
+        },
+        "network": {
+          "title": "Grow your trusted network",
+          "description": "Bring in teammates, friends, or collaborators. Use secure invites, verify with keys, and expand your ecosystem without compromising privacy."
+        },
+        "end_to_end": {
+          "title": "End-to-end encrypted and anonymized",
+          "description": "Your conversations are protected by military-grade encryption. Not even we can see what you’re saying — and we don’t want to."
+        },
+        "activity": {
+          "title": "Intelligent activity dashboards",
+          "description": "Track room engagement, message volume, server health, and federation links — without compromising on privacy. Insights that empower you."
+        }
+      }
+    },
+    "call_to_action": {
+      "title": "Take back control. Start messaging on your terms.",
+      "description": "It takes less than a minute to get started. Download the app, create your account, and join a decentralized network where your data stays yours — encrypted, federated, and free from surveillance."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "If you have anything else you want to ask, <mail>reach out to us</mail>.",
+      "end_to_end": {
+        "question": "Is this really end-to-end encrypted?",
+        "answer": "Yes. All messages, calls, and media are end-to-end encrypted by default using the Matrix protocol’s Olm and Megolm cryptographic libraries."
+      },
+      "centralized": {
+        "question": "Is the platform centralized?",
+        "answer": "No. It’s fully decentralized. You can join an existing server or run your own. Federation means no single company owns your data or controls your experience."
+      },
+      "devices": {
+        "question": "Can I use it on all my devices?",
+        "answer": "Absolutely. Our app works on iOS, Android, desktop, and web. Your conversations sync seamlessly across all your devices."
+      },
+      "server": {
+        "question": "Can I host my own server?",
+        "answer": "Yes — that’s one of the core strengths of Matrix. You can deploy your own homeserver using Synapse or Dendrite easily with Uchar's provided infrastructure via NixOS, and manage your own identity server if desired."
+      },
+      "platforms": {
+        "question": "Can I use it with other platforms?",
+        "answer": "You can bridge Matrix with other tools like Slack, Discord, Telegram, IRC, and more. Our platform is open and interoperable."
+      },
+      "calls": {
+        "question": "Does it support groups and voice/video calls?",
+        "answer": "Yes. You can create public or private rooms, threads, and communities (Spaces), and start encrypted voice or video calls — one-on-one or in groups."
+      },
+      "data": {
+        "question": "Is my data ever sold or tracked?",
+        "answer": "Never. Your data is encrypted and never shared or monetized. We don’t track usage behavior or embed third-party analytics."
+      },
+      "open_source": {
+        "question": "Is it open source?",
+        "answer": "Yes. Both the Matrix protocol and our client/infra are open source. You can inspect, audit, or contribute to the code."
+      },
+      "difference": {
+        "question": "What’s the difference between Matrix and other messaging apps?",
+        "answer": "Unlike traditional messengers, Matrix is decentralized — there’s no central server controlling your conversations. It supports federation, so anyone can run their own server and still connect to others. Plus, everything is end-to-end encrypted, extensible, and open-source — no walled gardens, no surveillance capitalism."
+      }
+    }
+  }
 }

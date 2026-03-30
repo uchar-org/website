@@ -1,42 +1,31 @@
 import { useId } from 'react'
 
 import { Container } from '@/components/Container'
+import { useTranslations } from 'next-intl'
 
 const features = [
   {
-    name: 'Cheklovsiz muloqot qilish',
-    description:
-      "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qatʼi nazar, platformamiz siz bilan tarozini oʻlchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz.",
+    name: 'communication',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Federativ va kelajakka moʻljallangan',
-    description:
-      'Oʻz serveringizni ishga tushiring yoki mavjud serverga ulaning. Matritsa federatsiyasi suhbatlaringiz tashkilot, mamlakat va platformalar boʻylab tarqalishiga imkon beradi — birorta ham muvaffaqiyatsizlik nuqtasi yoʻq.',
+    name: "federated",
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Barcha qurilmalarda real vaqt rejimida sinxronlash',
-    description:
-      'Mobil, desktop va veb orqali xabarlarni bir zumda yuborish, qabul qilish va sinxronlash. Har doim xavfsiz, har doim shifrlangan.',
+    name: 'real_time',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Ishonchli tarmoqni kengaytiring',
-    description:
-      'Jamoadoshlar, doʻstlar yoki hamkorlarni jalb qiling. Xavfsiz takliflardan foydalaning, kalitlar bilan tasdiqlang va maxfiylikka putur yetkazmasdan ekotizimingizni kengaytiring.',
+    name: 'network',
     icon: DeviceListIcon,
   },
   {
-    name: 'Boshidan oxirigacha shifrlash va anonimlik',
-    description:
-      'Suhbatlaringiz harbiy shifrlash bilan himoyalangan. Siz nima deyayotganingizni hatto biz ham koʻra olmaymiz va buni xohlamaymiz ham.',
+    name: 'end_to_end',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Intellektual faoliyat boshqaruv panellari',
-    description:
-      "Xona faolligi, xabarlar hajmi, server holati va federatsiya ulanishlarini maxfiylikni saqlagan holda kuzatib boring. Sizga imkoniyat beruvchi tahliliy maʼlumotlar.",
+    name: 'activity',
     icon: DeviceChartIcon,
   },
 ]
@@ -187,6 +176,8 @@ function DeviceChartIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export function SecondaryFeatures() {
+  const t = useTranslations('home.features.secondary');
+
   return (
     <section
       id="secondary-features"
@@ -196,12 +187,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Endi tarmogʻingizni yaratish vaqti keldi.
+            {t("title")}
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Markazlashgan boshqaruv va raqamli kuzatuv dunyosida suveren,
-            xavfsiz aloqa makonini yaratish endi ixtiyoriy emas - bu juda muhim.
-            Bugunoq maxfiy, shifrlangan tarmoq yaratishni boshlang.
+            {t("description")}
           </p>
         </div>
         <ul
@@ -215,9 +204,11 @@ export function SecondaryFeatures() {
             >
               <feature.icon className="h-8 w-8" />
               <h3 className="mt-6 font-semibold text-gray-900">
-                {feature.name}
+                {t(`${feature.name}.title`)}
               </h3>
-              <p className="mt-2 text-gray-700">{feature.description}</p>
+              <p className="mt-2 text-gray-700">
+                {t(`${feature.name}.description`)}
+              </p>
             </li>
           ))}
         </ul>
