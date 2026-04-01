@@ -6,14 +6,10 @@ import '@/styles/tailwind.css'
 import { routing } from '@/i18n/routing'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
-import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Layout } from '@/components/Layout'
 
 const inter = localFont({ src: './Inter.ttf' })
-
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
 
 export const metadata: Metadata = {
   title: {
