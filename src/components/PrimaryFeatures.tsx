@@ -365,7 +365,7 @@ function PowerFeatures(props: ScreenProps) {
 }
 
 function usePrevious<T>(value: T) {
-  let ref = useRef<T>()
+  let ref = useRef<T>(0 as unknown as T)
 
   useEffect(() => {
     ref.current = value
@@ -400,12 +400,13 @@ function FeaturesDesktop() {
       <TabList className="relative z-10 order-last col-span-6 space-y-6">
         {features.map((feature, featureIndex) => (
           <div
-            key={feature.name}
+            key={featureIndex}
             className="relative rounded-2xl transition-colors hover:bg-brand-600/30"
           >
             {featureIndex === selectedIndex && (
               <motion.div
                 layoutId="activeBackground"
+                //@ts-ignore
                 className="absolute inset-0 bg-brand-600"
                 initial={{ borderRadius: 16 }}
               />
@@ -439,7 +440,7 @@ function FeaturesDesktop() {
                 selectedIndex === featureIndex ? (
                   <TabPanel
                     static
-                    key={feature.name + changeCount}
+                    key={featureIndex}
                     className="col-start-1 row-start-1 flex focus:outline-offset-32 data-selected:not-data-focus:outline-hidden"
                   >
                     <feature.screen
@@ -498,7 +499,7 @@ function FeaturesMobile() {
       >
         {features.map((feature, featureIndex) => (
           <div
-            key={feature.name}
+            key={featureIndex}
             ref={(ref) => {
               ref && (slideRefs.current[featureIndex] = ref)
             }}

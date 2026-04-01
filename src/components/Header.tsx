@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import {
   Popover,
   PopoverButton,
@@ -13,9 +13,10 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLinks } from '@/components/NavLinks'
 import Image from 'next/image'
-import { useLocale, useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { SelectField } from './Fields'
 import { usePathname, useRouter } from '@/i18n/navigation';
+import { useParams } from 'next/navigation'
 
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -63,7 +64,7 @@ export function Header() {
   const t = useTranslations("nav")
   const pathname = usePathname();
   const router = useRouter();
-  const locale = useLocale();
+  const params = useParams();
 
 
   const langs = [
@@ -104,7 +105,7 @@ export function Header() {
             <SelectField
               className="lg:hidden"
               onChange={changeLanguage}
-              defaultValue={locale}
+              defaultValue={params.locale}
             >
               {langs.map((lang) => (
                 <option key={lang.value} value={lang.value}>
@@ -136,6 +137,7 @@ export function Header() {
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
+                          //@ts-ignore
                           className="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur-sm"
                         />
                         <PopoverPanel
@@ -148,13 +150,14 @@ export function Header() {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
+                          //@ts-ignore
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#features">
+                            <MobileNavLink href="/#features">
                               {t("links.features")}
                             </MobileNavLink>
-                            <MobileNavLink href="#faqs">
+                            <MobileNavLink href="/#faqs">
                               {t("links.faqs")}
                             </MobileNavLink>
                             <MobileNavLink href="/privacy">
@@ -177,7 +180,7 @@ export function Header() {
               )}
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
-              <SelectField onChange={changeLanguage} defaultValue={locale}>
+              <SelectField onChange={changeLanguage} defaultValue={params.locale}>
                 {langs.map((lang) => (
                   <option key={lang.value} value={lang.value}>
                     {lang.icon + " " + lang.label}

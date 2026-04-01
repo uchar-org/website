@@ -1,6 +1,6 @@
 # Maxfiylik siyosati
 
-- **Kuchga kirish sanasi:** July 2025
+- **Kuchga kirish sanasi:** 2025 Iyul
 - **Egasi:** Uzinfocom
 - **Platforma:** uchar.uz
 - **Aloqa:** support@uchar.uz

@@ -1,9 +1,9 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 
 export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -16,7 +16,7 @@ export function NavLinks() {
     [t("privacy"), '/privacy'],
   ].map(([label, href], index) => (
     <Link
-      key={label}
+      key={href}
       href={href}
       className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
       onMouseEnter={() => {
@@ -34,6 +34,7 @@ export function NavLinks() {
       <AnimatePresence>
         {hoveredIndex === index && (
           <motion.span
+            //@ts-ignore
             className="absolute inset-0 rounded-lg bg-gray-100"
             layoutId="hoverBackground"
             initial={{ opacity: 0 }}
