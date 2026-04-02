@@ -55,7 +55,7 @@ pkgs.stdenv.mkDerivation {
     # Create output directory
     mkdir -p $out
 
-    cat ./next.config.js
+    cat ./next.config.ts
     ls -la ./.next
 
     # Copy standalone as library
@@ -86,7 +86,7 @@ pkgs.stdenv.mkDerivation {
     version = manifest.version;
     src = source;
     fetcherVersion = 3;
-    hash = "sha256-K0Ms3PgSgK0/sulGIw4tBigovSEcZZ6/Mnc2ECjtTLk=";
+    hash = "sha256-8Dkm2OIvJhzQb5ExfqmwCggpVeveySniZ55+bwpfeDw=";
   };
 
   meta = with pkgs.lib; {
