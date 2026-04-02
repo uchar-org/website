@@ -365,7 +365,7 @@ function PowerFeatures(props: ScreenProps) {
 }
 
 function usePrevious<T>(value: T) {
-  let ref = useRef<T>(0 as unknown as T)
+  let ref = useRef<T>(undefined)
 
   useEffect(() => {
     ref.current = value

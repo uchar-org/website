@@ -6,7 +6,7 @@ import '@/styles/tailwind.css'
 import { routing } from '@/i18n/routing'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
-import { setRequestLocale } from 'next-intl/server'
+import { getMessages, setRequestLocale } from 'next-intl/server'
 import { Layout } from '@/components/Layout'
 
 const inter = localFont({ src: './Inter.ttf' })
@@ -32,17 +32,19 @@ export default async function RootLayout({
     notFound();
   }
 
+  const messages = await getMessages()
+
   setRequestLocale(locale);
 
   return (
     <html lang={locale} className={clsx('bg-gray-50 antialiased', inter.className)}>
-      <NextIntlClientProvider>
-        <body>
+      <body>
+        <NextIntlClientProvider messages={messages}>
           <Layout>
             {children}
           </Layout>
-        </body>
-      </NextIntlClientProvider>
+        </NextIntlClientProvider>
+      </body>
     </html>
   )
 }
