@@ -2,8 +2,11 @@ import { AppStoreLink } from '@/components/AppStoreLink'
 import { GooglePlayLink } from './GooglePlayLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
+import { useTranslations } from 'next-intl'
 
 export function CallToAction() {
+  const t = useTranslations('home.call_to_action')
+
   return (
     <section
       id="get-free-apps-today"
@@ -15,14 +18,10 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Nazoratni qaytarib oling. Shartlaringiz asosida xabarlashuvni
-            boshlang.
+            {t("title")}
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Boshlash uchun bir daqiqadan kamroq vaqt ketadi. Ilovani yuklab
-            oling, hisobingizni yarating va maʼlumotlaringiz oʻzingizniki
-            boʻlib qoladigan markazlashmagan tarmoqqa qoʻshiling — shifrlangan,
-            federatsiyalangan va kuzatuvdan xoli.
+            {t("description")}
           </p>
           <div className="mt-8 flex justify-center gap-5">
             <AppStoreLink color="white" />

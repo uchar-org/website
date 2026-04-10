@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import {
   Popover,
   PopoverButton,
@@ -11,9 +11,13 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import { SelectField } from './Fields'
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { useParams } from 'next/navigation'
+
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -57,6 +61,34 @@ function MobileNavLink(
 }
 
 export function Header() {
+  const t = useTranslations("nav")
+  const pathname = usePathname();
+  const router = useRouter();
+  const params = useParams();
+
+
+  const langs = [
+    {
+      value: "en",
+      label: "English",
+      icon: "🇺🇸",
+    },
+    {
+      value: "ru",
+      label: "Русский",
+      icon: "🇷🇺",
+    },
+    {
+      value: "uz",
+      label: "Oʻzbekcha",
+      icon: "🇺🇿",
+    }
+  ]
+
+  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    router.replace(pathname, { locale: e.target.value });
+  }
+
   return (
     <header>
       <nav>
@@ -70,6 +102,17 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-6">
+            <SelectField
+              className="lg:hidden"
+              onChange={changeLanguage}
+              defaultValue={params.locale}
+            >
+              {langs.map((lang) => (
+                <option key={lang.value} value={lang.value}>
+                  {lang.icon}
+                </option>
+              ))}
+            </SelectField>
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
@@ -94,6 +137,7 @@ export function Header() {
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
+                          //@ts-ignore
                           className="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur-sm"
                         />
                         <PopoverPanel
@@ -106,17 +150,18 @@ export function Header() {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
+                          //@ts-ignore
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#features">
-                              Xususiyatlar
+                            <MobileNavLink href="/#features">
+                              {t("links.features")}
                             </MobileNavLink>
-                            <MobileNavLink href="#faqs">
-                              Savol-javoblar
+                            <MobileNavLink href="/#faqs">
+                              {t("links.faqs")}
                             </MobileNavLink>
                             <MobileNavLink href="/privacy">
-                              Maxfiylik
+                              {t("links.privacy")}
                             </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
@@ -124,7 +169,7 @@ export function Header() {
                               href="https://chat.uchar.uz"
                               variant="outline"
                             >
-                              Kirish
+                              {t("header.sign_in")}
                             </Button>
                           </div>
                         </PopoverPanel>
@@ -135,8 +180,15 @@ export function Header() {
               )}
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
+              <SelectField onChange={changeLanguage} defaultValue={params.locale}>
+                {langs.map((lang) => (
+                  <option key={lang.value} value={lang.value}>
+                    {lang.icon + " " + lang.label}
+                  </option>
+                ))}
+              </SelectField>
               <Button href="https://chat.uchar.uz" variant="outline">
-                Kirish
+                {t("header.sign_in")}
               </Button>
               {/* <Button href="#">Download</Button> */}
             </div>

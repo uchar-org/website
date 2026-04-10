@@ -1,0 +1,131 @@
+{
+  "chat": {
+    "chats": "Xabarlar",
+    "community": "Hamjamiyat",
+    "encrypted": "Shifrlangan",
+    "mute": "Ovozsiz qilish",
+    "call": "Qoʻngʻiroq qilish",
+    "messages_encrypted": "Xabarni shifrlash yoqilgan",
+    "messages_secured": "Xabarlar qulf bilan himoyalangan. Ularni ochadigan noyob kalitlar faqat sizda va xabar oluvchilarda bor.",
+    "reply": "Javob yozish",
+    "forward": "Uzatish",
+    "copy_link": "Havolani nusxalash",
+    "pin": "Qadash",
+    "copy": "Nusxalash",
+    "view_source": "Manbani koʻrish"
+  },
+  "nav": {
+    "links": {
+      "features": "Xususiyatlar",
+      "reviews": "Sharhlar",
+      "pricing": "Narxlar",
+      "privacy": "Maxfiylik",
+      "faqs": "Savol-javoblar"
+    },
+    "header": {
+      "choose_server": "Server tanlang",
+      "sign_in": "Kirish"
+    },
+    "footer": {
+      "title": "Oʻz efiringizni kashf eting.",
+      "copyright": "Copyright {date}. Barcha huquqlar himoyalangan."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Oʻz <guide>efiringizni</guide> kashf eting.",
+      "description": "Hamjamiyatlarni kuchaytirish va maʼlumotlaringizni himoya qilish uchun moʻljallangan markazlashmagan, maxfiylikka birinchi oʻrinda eʼtibor beradigan ijtimoiy platforma — hech qanday reklama, kuzatuvsiz, shunchaki xavfsiz muloqot.",
+      "featured": "Bunda tasvirlangan:"
+    },
+    "features": {
+      "primary": {
+        "title": "Xufyona va mustaqil muloqot uchun kerakli barcha narsa. Oʻzingiz sinab koʻring.",
+        "description": "Biz bu platformani kuzatuv, monetizatsiya yoki senzuraga uchrashni istamaydigan jamoalar, faollar, dasturchilar va mustaqil fikrlaydigan odamlar uchun ishlab chiqdik. Agar boshqa platformalar murosaga kelsa, biz boshqa yoʻldan boramiz. Agar maxfiylik muhim boʻlsa, biz uni oʻrnatamiz.",
+        "decentralized": {
+          "title": "Asli markazlashmagan",
+          "description": "Suhbatlaringiz begona serverga tegishli emas. Matrix yordamida maʼlumotlaringiz oʻz-oʻzini boshqarish, federatsiya qilish yoki ishonchli nusxalarga qoʻshilish kabi shartlar asosida saqlanadi. Markaziy hokimiyat yoʻq. Sotuvchi qulfi yoʻq."
+        },
+        "end_to_end": {
+          "title": "Boshidan oxirigacha shifrlangan",
+          "description": "Xabarlar, ovozli qoʻngʻiroqlar, video - barchasi Olm va Megolm kabi eng soʻnggi protokollar bilan shifrlangan. Yakkama-yakka suhbatlashayotganingizda ham, global xonalarda hamkorlik qilayotganingizda ham muloqotingiz maxfiy qoladi."
+        },
+        "power_features": {
+          "title": "Ilgʻor foydalanuvchilar uchun kengaytirilgan imkoniyatlar",
+          "description": "Mavzuli suhbatlar, vidjetlar, botlar, VoIP, reaksiyalar va boshqa koʻplab imkoniyatlar. Xakerlar jamoasi, DAO yoki oʻyin gildiyasini boshqarayotgan boʻlsangiz ham — barchasi siz uchun mujassam."
+        }
+      },
+      "secondary": {
+        "title": "Endi tarmogʻingizni yaratish vaqti keldi.",
+        "description": "Markazlashgan boshqaruv va raqamli kuzatuv dunyosida suveren, xavfsiz aloqa makonini yaratish endi ixtiyoriy emas - bu juda muhim. Bugunoq maxfiy, shifrlangan tarmoq yaratishni boshlang.",
+        "communication": {
+          "title": "Cheklovsiz muloqot qilish",
+          "description": "5 yoki 50 000 kishilik hamjamiyatni boshqarishingizdan qatʼi nazar, platformamiz siz bilan tarozini oʻlchaydi. Sizning xabarlaringiz, sizning xonalaringiz, sizning nazoratingiz."
+        },
+        "federated": {
+          "title": "Federativ va kelajakka moʻljallangan",
+          "description": "Oʻz serveringizni ishga tushiring yoki mavjud serverga ulaning. Matritsa federatsiyasi suhbatlaringiz tashkilot, mamlakat va platformalar boʻylab tarqalishiga imkon beradi — birorta ham muvaffaqiyatsizlik nuqtasi yoʻq."
+        },
+        "real_time": {
+          "title": "Barcha qurilmalarda real vaqt rejimida sinxronlash",
+          "description": "Mobil, desktop va veb orqali xabarlarni bir zumda yuborish, qabul qilish va sinxronlash. Har doim xavfsiz, har doim shifrlangan."
+        },
+        "network": {
+          "title": "Ishonchli tarmoqni kengaytiring",
+          "description": "Jamoadoshlar, doʻstlar yoki hamkorlarni jalb qiling. Xavfsiz takliflardan foydalaning, kalitlar bilan tasdiqlang va maxfiylikka putur yetkazmasdan ekotizimingizni kengaytiring."
+        },
+        "end_to_end": {
+          "title": "Boshidan oxirigacha shifrlash va anonimlik",
+          "description": "Suhbatlaringiz harbiy shifrlash bilan himoyalangan. Siz nima deyayotganingizni hatto biz ham koʻra olmaymiz va buni xohlamaymiz ham."
+        },
+        "activity": {
+          "title": "Intellektual faoliyat boshqaruv panellari",
+          "description": "Xona faolligi, xabarlar hajmi, server holati va federatsiya ulanishlarini maxfiylikni saqlagan holda kuzatib boring. Sizga imkoniyat beruvchi tahliliy maʼlumotlar."
+        }
+      }
+    },
+    "call_to_action": {
+      "title": "Nazoratni qaytarib oling. Shartlaringiz asosida xabarlashuvni boshlang.",
+      "description": "Boshlash uchun bir daqiqadan kamroq vaqt ketadi. Ilovani yuklab oling, hisobingizni yarating va maʼlumotlaringiz oʻzingizniki boʻlib qoladigan markazlashmagan tarmoqqa qoʻshiling — shifrlangan, federatsiyalangan va kuzatuvdan xoli."
+    },
+    "faq": {
+      "title": "Tez-tez so‘raladigan savollar",
+      "description": "Agar yana biror narsa so‘ramoqchi bo‘lsangiz, <mail>bizga murojaat qilmoq</mail>.",
+      "end_to_end": {
+        "question": "Bu haqiqatan ham boshidan oxirigacha shifrlanganmi?",
+        "answer": "Ha. Barcha xabarlar, qo‘ng‘iroqlar va mediafayllar standart tarzda Matrix protokolining Olm va Megolm kriptografik kutubxonalari yordamida uzluksiz shifrlanadi."
+      },
+      "centralized": {
+        "question": "Platforma markazlashganmi?",
+        "answer": "Yo‘q. U to‘liq markazlashtirilmagan. Mavjud serverga qo‘shilishingiz yoki o‘zingiznikini ishga tushirishingiz mumkin. Federatsiya hech qanday kompaniya sizning maʼlumotlaringizga egalik qilmasligini yoki tajribangizni nazorat qilmasligini anglatadi."
+      },
+      "devices": {
+        "question": "Uni barcha qurilmalarimda ishlata olamanmi?",
+        "answer": "Albatta. Ilovamiz iOS, Android, desktop va vebda ishlaydi. Suhbatlaringiz barcha qurilmalaringizda muammosiz sinxronlanadi."
+      },
+      "server": {
+        "question": "O‘z serverimni joylashtira olamanmi?",
+        "answer": "Ha, bu Matriksning asosiy afzalliklaridan biri. NixOS orqali Uchar tomonidan taqdim etilgan infratuzilma bilan Synapse yoki Dendrite yordamida o‘z uy serveringizni osongina joylashtirishingiz va istasangiz, shaxsiy serveringizni boshqarishingiz mumkin."
+      },
+      "platforms": {
+        "question": "Boshqa platformalar bilan ishlata olamanmi?",
+        "answer": "Matrixni Slack, Discord, Telegram, IRC va boshqa vositalar bilan bog‘lashingiz mumkin. Bizning platformamiz ochiq va o‘zaro ishlaydigan."
+      },
+      "calls": {
+        "question": "Guruhlar va ovozli/video chaqiruvlar ishlaydimi?",
+        "answer": "Ha. Siz ommaviy yoki shaxsiy xonalar, muhokamalar va hamjamiyatlar (Spaces) yaratishingiz, shuningdek, shifrlangan ovozli yoki video qo‘ng‘iroqlarni boshlashingiz mumkin — xoh yakka tartibda, xoh guruh bo‘lib."
+      },
+      "data": {
+        "question": "Maʼlumotlarim biror marta sotilganmi yoki kuzatilganmi?",
+        "answer": "Hech qachon. Maʼlumotlaringiz shifrlangan va hech qachon ulashilmaydi yoki monetizatsiya qilinmaydi. Biz foydalanish xatti-harakatlarini kuzatmaymiz yoki tashqi tahlillarni kiritmaymiz."
+      },
+      "open_source": {
+        "question": "Ochiq kodlimi?",
+        "answer": "Ha. Matrix protokoli ham, bizning dasturiy ta‘minotimiz/infratuzilmamiz ham ochiq manbalidir. Kodni ko‘zdan kechirishingiz, tekshirishingiz yoki uni rivojlantirishga hissa qo‘shishingiz mumkin."
+      },
+      "difference": {
+        "question": "Matrix va boshqa xabar almashish ilovalarining farqi nimada?",
+        "answer": "Anʼanaviy messenjerlardan farqli o‘laroq, Matrix markazlashtirilmagan - sizning suhbatlaringizni boshqaradigan markaziy server yo‘q. U federatsiyani qo‘llab-quvvatlaydi, shuning uchun har kim o‘z serverini ishga tushirishi va boshqalarga ulanishi mumkin. Bundan tashqari, hamma narsa boshidan oxirigacha shifrlangan, kengaytiriladigan va ochiq kodli - na devor bilan o‘ralgan bog‘lar, na kuzatuv kapitalizmi mavjud."
+      }
+    }
+  }
+}

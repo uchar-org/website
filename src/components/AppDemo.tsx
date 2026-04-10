@@ -1,21 +1,24 @@
 'use client'
 
-import { AppScreen, BackIcon, VideoIcon } from '@/components/AppScreen'
+import { AppScreen } from '@/components/AppScreen'
 import { Avatar, ChatMessage } from './ChatMessage'
 import { FaArrowLeft } from '@react-icons/all-files/fa/FaArrowLeft'
 import { FaVideo } from '@react-icons/all-files/fa/FaVideo'
+import { useTranslations } from 'next-intl'
 
 export function AppDemo() {
+  const t = useTranslations("chat")
+
   return (
     <AppScreen>
       <AppScreen.Body className="bg-brand px-5 text-white">
-        <div className="mb-2 text-xl font-bold">Chats</div>
+        <div className="mb-2 text-xl font-bold">{t("chats")}</div>
 
         <div className="flex">
           <div className="flex flex-1 items-center gap-3">
             <Avatar text="H" color="amber" size="medium" />
             <div className="flex flex-col justify-center gap-0.5">
-              <div className="text-sm font-bold">Hamjamiyat</div>
+              <div className="text-sm font-bold">{t("community")}</div>
               <div className="text-xs">
                 <strong>Abdusattor</strong>: Bizda yaxshi, rahmat
               </div>
@@ -32,7 +35,7 @@ export function AppDemo() {
           <div className="flex items-center">
             <FaArrowLeft className="mr-3" />
             <Avatar text="H" color="amber" size="small" className="mr-2" />
-            <div className="text-sm">Hamjamiyat</div>
+            <div className="text-sm">{t("community")}</div>
             <FaVideo className="ml-auto" />
           </div>
           <div className="mt-3 border-t border-gray-200 pt-5">

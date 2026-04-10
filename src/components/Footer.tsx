@@ -1,13 +1,12 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { TextField } from '@/components/Fields'
-import { Logomark } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import { useTranslations } from 'next-intl'
 
 export function Footer() {
+  const t = useTranslations("nav.footer")
+
   return (
     <footer className="border-t border-gray-200">
       <Container>
@@ -23,17 +22,19 @@ export function Footer() {
               />
               <div className="ml-4">
                 <p className="text-base font-semibold">Uchar</p>
-                <p className="mt-1 text-sm">Oʻz efiringizni kashf eting.</p>
+                <p className="mt-1 text-sm">
+                  {t("title")}
+                </p>
               </div>
             </div>
-            <nav className="mt-11 flex gap-8">
+            <nav className="mt-11 flex flex-wrap gap-8">
               <NavLinks />
             </nav>
           </div>
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-12 md:flex-row md:justify-between md:pt-6">
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
-            &copy; Copyright {new Date().getFullYear()}. All rights reserved.
+            {t("copyright", { date: new Date().getFullYear() })}
           </p>
         </div>
       </Container>
