@@ -4,11 +4,12 @@ import { Hero } from '@/components/Hero'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { setRequestLocale } from 'next-intl/server'
+import { use } from 'react'
 
-export default async function Home(props: PageProps<"/[locale]">) {
-  const { locale } = await props.params;
+export default function Home(props: PageProps<'/[locale]'>) {
+  const { locale } = use(props.params)
 
-  setRequestLocale(locale);
+  setRequestLocale(locale)
 
   return (
     <>

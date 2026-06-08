@@ -1,3 +1,5 @@
+'use client'
+
 export function CirclesBackground(
   props: React.ComponentPropsWithoutRef<'svg'>,
 ) {

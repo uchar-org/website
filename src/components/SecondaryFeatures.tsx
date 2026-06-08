@@ -1,3 +1,5 @@
+'use client'
+
 import { useId } from 'react'
 
 import { Container } from '@/components/Container'
@@ -9,7 +11,7 @@ const features = [
     icon: DeviceArrowIcon,
   },
   {
-    name: "federated",
+    name: 'federated',
     icon: DeviceCardsIcon,
   },
   {
@@ -176,7 +178,7 @@ function DeviceChartIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export function SecondaryFeatures() {
-  const t = useTranslations('home.features.secondary');
+  const t = useTranslations('home.features.secondary')
 
   return (
     <section
@@ -187,11 +189,9 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            {t("title")}
+            {t('title')}
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            {t("description")}
-          </p>
+          <p className="mt-2 text-lg text-gray-600">{t('description')}</p>
         </div>
         <ul
           role="list"
