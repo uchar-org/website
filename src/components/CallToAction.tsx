@@ -1,3 +1,5 @@
+'use client'
+
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { GooglePlayLink } from './GooglePlayLink'
 import { CircleBackground } from '@/components/CircleBackground'
@@ -18,11 +20,9 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            {t("title")}
+            {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-gray-300">
-            {t("description")}
-          </p>
+          <p className="mt-4 text-lg text-gray-300">{t('description')}</p>
           <div className="mt-8 flex justify-center gap-5">
             <AppStoreLink color="white" />
             <GooglePlayLink color="white" />
