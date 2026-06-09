@@ -1,47 +1,47 @@
+'use client'
+
 import { Container } from '@/components/Container'
 import { useTranslations } from 'next-intl'
 
-
-
 export function Faqs() {
-  const t = useTranslations("home.faq")
+  const t = useTranslations('home.faq')
 
   const faqs = [
     {
-      question: t("end_to_end.question"),
-      answer: t("end_to_end.answer")
+      question: t('end_to_end.question'),
+      answer: t('end_to_end.answer'),
     },
     {
-      question: t("centralized.question"),
-      answer: t("centralized.answer")
+      question: t('centralized.question'),
+      answer: t('centralized.answer'),
     },
     {
-      question: t("devices.question"),
-      answer: t("devices.answer")
+      question: t('devices.question'),
+      answer: t('devices.answer'),
     },
     {
-      question: t("server.question"),
-      answer: t("server.answer")
+      question: t('server.question'),
+      answer: t('server.answer'),
     },
     {
-      question: t("platforms.question"),
-      answer: t("platforms.answer"),
+      question: t('platforms.question'),
+      answer: t('platforms.answer'),
     },
     {
-      question: t("calls.question"),
-      answer: t("calls.answer")
+      question: t('calls.question'),
+      answer: t('calls.answer'),
     },
     {
-      question: t("data.question"),
-      answer: t("data.answer"),
+      question: t('data.question'),
+      answer: t('data.answer'),
     },
     {
-      question: t("open_source.question"),
-      answer: t("open_source.answer"),
+      question: t('open_source.question'),
+      answer: t('open_source.answer'),
     },
     {
-      question: t("difference.question"),
-      answer: t("difference.answer")
+      question: t('difference.question'),
+      answer: t('difference.answer'),
     },
   ]
 
@@ -57,10 +57,10 @@ export function Faqs() {
             id="faqs-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            {t("title")}
+            {t('title')}
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            {t.rich("description", {
+            {t.rich('description', {
               mail: (str) => (
                 <a
                   href="mailto:support@uchar.uz"
@@ -68,7 +68,7 @@ export function Faqs() {
                 >
                   {str}
                 </a>
-              )
+              ),
             })}
           </p>
         </div>
@@ -81,9 +81,7 @@ export function Faqs() {
               <h3 className="text-lg/6 font-semibold text-gray-900">
                 {faq.question}
               </h3>
-              <p className="mt-4 text-sm text-gray-700">
-                {faq.answer}
-              </p>
+              <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
             </li>
           ))}
         </ul>

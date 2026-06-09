@@ -1,3 +1,5 @@
+'use client'
+
 export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 1000 1000" aria-hidden="true" {...props}>

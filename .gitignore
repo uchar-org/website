@@ -38,10 +38,10 @@ next-env.d.ts
 .direnv
 
 # temporary fonts
-# src/app/Inter.ttf
+src/app/Inter.ttf
 
 # nix output
 result
 
-# workspace 
+# workspace
 .vscode

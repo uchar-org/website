@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import clsx from 'clsx'
 
@@ -51,6 +53,6 @@ export function GooglePlayLink({
           strokeWidth=".26666"
         />
       </svg>
-    </Link >
+    </Link>
   )
 }
