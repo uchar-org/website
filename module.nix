@@ -58,19 +58,17 @@ in
       ) "services.uchar.website.proxy.domain must be set in order to properly generate certificate!")
     ];
 
-    services.nginx.virtualHosts =
-      lib.mkIf (cfg.enable && cfg.proxy.enable)
-        (
-          lib.debug.traceIf (isNull cfg.proxy.domain)
-            "proxy.domain can't be null, please specicy it properly!"
-            {
-              "${cfg.proxy.domain}" = {
-                forceSSL = true;
-                enableACME = true;
-                serverAliases = cfg.proxy.alias;
-                root = cfg.package;
-              };
-            }
-        );
+    services.nginx.virtualHosts = lib.mkIf (cfg.enable && cfg.proxy.enable) (
+      lib.debug.traceIf (isNull cfg.proxy.domain)
+        "proxy.domain can't be null, please specicy it properly!"
+        {
+          "${cfg.proxy.domain}" = {
+            forceSSL = true;
+            enableACME = true;
+            serverAliases = cfg.proxy.alias;
+            root = cfg.package;
+          };
+        }
+    );
   };
 }

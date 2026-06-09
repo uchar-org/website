@@ -2,20 +2,20 @@ flake:
 { pkgs, ... }:
 let
   # Hostplatform system
-  system = pkgs.hostPlatform.system;
+  system = pkgs.stdenv.hostPlatform.system;
 
   # Production package
   base = flake.packages.${system}.default;
 in
 pkgs.mkShell {
-  inputsFrom = [base];
+  inputsFrom = [ base ];
 
   packages = with pkgs; [
     # Nix
     nixd
     statix
     deadnix
-    alejandra
+    nixfmt-rs
   ];
 
   shellHook = ''

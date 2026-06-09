@@ -22,11 +22,7 @@
     flake-parts.lib.mkFlake { inherit inputs; } (
       { ... }:
       {
-        systems = [
-          "x86_64-linux"
-          "aarch64-linux"
-          "aarch64-darwin"
-        ];
+        systems = [ "x86_64-linux" ];
         flake = {
           # Deployment module
           nixosModules.server = import ./module.nix self;
@@ -35,7 +31,7 @@
           { pkgs, ... }:
           {
             # Nix script formatter
-            formatter = pkgs.nixfmt-tree;
+            formatter = pkgs.nixfmt-rs;
 
             # Development environment
             devShells.default = import ./shell.nix self { inherit pkgs; };
