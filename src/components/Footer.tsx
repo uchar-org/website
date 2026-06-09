@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
@@ -5,7 +7,7 @@ import { NavLinks } from '@/components/NavLinks'
 import { useTranslations } from 'next-intl'
 
 export function Footer() {
-  const t = useTranslations("nav.footer")
+  const t = useTranslations('nav.footer')
 
   return (
     <footer className="border-t border-gray-200">
@@ -22,9 +24,7 @@ export function Footer() {
               />
               <div className="ml-4">
                 <p className="text-base font-semibold">Uchar</p>
-                <p className="mt-1 text-sm">
-                  {t("title")}
-                </p>
+                <p className="mt-1 text-sm">{t('title')}</p>
               </div>
             </div>
             <nav className="mt-11 flex flex-wrap gap-8">
@@ -34,7 +34,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-12 md:flex-row md:justify-between md:pt-6">
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
-            {t("copyright", { date: new Date().getFullYear() })}
+            {t('copyright', { date: new Date().getFullYear() })}
           </p>
         </div>
       </Container>

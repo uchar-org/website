@@ -2,14 +2,17 @@ import { type Metadata } from 'next'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
-import '@/styles/tailwind.css'
 import { routing } from '@/i18n/routing'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
-import { getMessages, setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Layout } from '@/components/Layout'
 
 const inter = localFont({ src: './Inter.ttf' })
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
 
 export const metadata: Metadata = {
   title: {
@@ -22,27 +25,26 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode
   params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params;
+  const { locale } = await params
   if (!hasLocale(routing.locales, locale)) {
-    notFound();
+    notFound()
   }
 
-  const messages = await getMessages()
-
-  setRequestLocale(locale);
+  setRequestLocale(locale)
 
   return (
-    <html lang={locale} className={clsx('bg-gray-50 antialiased', inter.className)}>
+    <html
+      lang={locale}
+      className={clsx('bg-gray-50 antialiased', inter.className)}
+    >
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <Layout>
-            {children}
-          </Layout>
+        <NextIntlClientProvider>
+          <Layout>{children}</Layout>
         </NextIntlClientProvider>
       </body>
     </html>

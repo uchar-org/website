@@ -15,9 +15,8 @@ import { NavLinks } from '@/components/NavLinks'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { SelectField } from './Fields'
-import { usePathname, useRouter } from '@/i18n/navigation';
+import { usePathname, useRouter } from '@/i18n/navigation'
 import { useParams } from 'next/navigation'
-
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -61,32 +60,31 @@ function MobileNavLink(
 }
 
 export function Header() {
-  const t = useTranslations("nav")
-  const pathname = usePathname();
-  const router = useRouter();
-  const params = useParams();
-
+  const t = useTranslations('nav')
+  const pathname = usePathname()
+  const router = useRouter()
+  const params = useParams()
 
   const langs = [
     {
-      value: "en",
-      label: "English",
-      icon: "🇺🇸",
+      value: 'en',
+      label: 'English',
+      icon: '🇺🇸',
     },
     {
-      value: "ru",
-      label: "Русский",
-      icon: "🇷🇺",
+      value: 'ru',
+      label: 'Русский',
+      icon: '🇷🇺',
     },
     {
-      value: "uz",
-      label: "Oʻzbekcha",
-      icon: "🇺🇿",
-    }
+      value: 'uz',
+      label: 'Oʻzbekcha',
+      icon: '🇺🇿',
+    },
   ]
 
   const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    router.replace(pathname, { locale: e.target.value });
+    router.replace(pathname, { locale: e.target.value })
   }
 
   return (
@@ -155,13 +153,13 @@ export function Header() {
                         >
                           <div className="space-y-4">
                             <MobileNavLink href="/#features">
-                              {t("links.features")}
+                              {t('links.features')}
                             </MobileNavLink>
                             <MobileNavLink href="/#faqs">
-                              {t("links.faqs")}
+                              {t('links.faqs')}
                             </MobileNavLink>
                             <MobileNavLink href="/privacy">
-                              {t("links.privacy")}
+                              {t('links.privacy')}
                             </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
@@ -169,7 +167,7 @@ export function Header() {
                               href="https://chat.uchar.uz"
                               variant="outline"
                             >
-                              {t("header.sign_in")}
+                              {t('header.sign_in')}
                             </Button>
                           </div>
                         </PopoverPanel>
@@ -180,15 +178,18 @@ export function Header() {
               )}
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
-              <SelectField onChange={changeLanguage} defaultValue={params.locale}>
+              <SelectField
+                onChange={changeLanguage}
+                defaultValue={params.locale}
+              >
                 {langs.map((lang) => (
                   <option key={lang.value} value={lang.value}>
-                    {lang.icon + " " + lang.label}
+                    {lang.icon + ' ' + lang.label}
                   </option>
                 ))}
               </SelectField>
               <Button href="https://chat.uchar.uz" variant="outline">
-                {t("header.sign_in")}
+                {t('header.sign_in')}
               </Button>
               {/* <Button href="#">Download</Button> */}
             </div>

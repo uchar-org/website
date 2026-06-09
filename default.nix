@@ -16,15 +16,6 @@ let
 
   # All source codes
   source = ./.;
-
-  # Executable
-  exec = pkgs.writeShellScript "${manifest.name}-start.sh" ''
-    # Change working directory to script
-    cd "$(dirname "$0")/../lib"
-
-    # Start the stadalone server
-    ${pkgs.lib.getExe pkgs.nodejs} ./server.js
-  '';
 in
 pkgs.stdenv.mkDerivation {
   pname = manifest.name;
@@ -55,30 +46,33 @@ pkgs.stdenv.mkDerivation {
     # Create output directory
     mkdir -p $out
 
-    cat ./next.config.ts
-    ls -la ./.next
+    # Move compiled contents
+    cp -r ./out/* $out
 
-    # Copy standalone as library
-    cp -r ./.next/standalone $out/lib
+    # cat ./next.config.ts
+    # ls -la ./.next
 
-    # Create filler folders
-    mkdir -p $out/lib/.next
+    # # Copy standalone as library
+    # cp -r ./.next/standalone $out/lib
 
-    # Copy static contents
-    if [ -d "./.next/static" ]; then
-      cp -R ./.next/static $out/lib/.next/static
-    fi
+    # # Create filler folders
+    # mkdir -p $out/lib/.next
 
-    # Copy public assets
-    if [ -d "./public" ]; then
-      cp -R ./public $out/lib/public
-    fi
+    # # Copy static contents
+    # if [ -d "./.next/static" ]; then
+    #   cp -R ./.next/static $out/lib/.next/static
+    # fi
 
-    # Create executable directory
-    mkdir -p $out/bin
+    # # Copy public assets
+    # if [ -d "./public" ]; then
+    #   cp -R ./public $out/lib/public
+    # fi
 
-    # Copy shell script to executables
-    cp -r ${exec} $out/bin/${manifest.name}-start
+    # # Create executable directory
+    # mkdir -p $out/bin
+
+    # # Copy shell script to executables
+    # cp -r $ {exec} $out/bin/$ {manifest.name}-start
   '';
 
   pnpmDeps = pkgs.fetchPnpmDeps {
@@ -86,7 +80,7 @@ pkgs.stdenv.mkDerivation {
     version = manifest.version;
     src = source;
     fetcherVersion = 3;
-    hash = "sha256-EY1EFE5tzLI16aBVUlMoZniiNC+VuMmGxMmf0wKLGFg=";
+    hash = "sha256-Pb/636RcvVxOx4jSF7N5k4A0xYnuTwXcBpNuFT+EZ/8=";
   };
 
   meta = with pkgs.lib; {

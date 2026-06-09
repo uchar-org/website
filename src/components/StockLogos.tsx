@@ -1,3 +1,5 @@
+'use client'
+
 export function LaravelLogo(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 40 40" fill="#fff" aria-hidden="true" {...props}>
