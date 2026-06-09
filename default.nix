@@ -48,31 +48,6 @@ pkgs.stdenv.mkDerivation {
 
     # Move compiled contents
     cp -r ./out/* $out
-
-    # cat ./next.config.ts
-    # ls -la ./.next
-
-    # # Copy standalone as library
-    # cp -r ./.next/standalone $out/lib
-
-    # # Create filler folders
-    # mkdir -p $out/lib/.next
-
-    # # Copy static contents
-    # if [ -d "./.next/static" ]; then
-    #   cp -R ./.next/static $out/lib/.next/static
-    # fi
-
-    # # Copy public assets
-    # if [ -d "./public" ]; then
-    #   cp -R ./public $out/lib/public
-    # fi
-
-    # # Create executable directory
-    # mkdir -p $out/bin
-
-    # # Copy shell script to executables
-    # cp -r $ {exec} $out/bin/$ {manifest.name}-start
   '';
 
   pnpmDeps = pkgs.fetchPnpmDeps {
