@@ -7,14 +7,14 @@
 
 ## 1. Kirish
 
-Uzinfocomda biz xavfsiz aloqa asosiy huquq deb hisoblaymiz. Bu maxfiylik siyosati Matrix protokoli asosida qurilgan markazlashmagan xabar almashinuv platformasi Uchar ilovasidan foydalanganingizda qanday maʼlumotlarni olishimiz va ushbu maʼlumotlarni qanday himoyalashimiz va foydalanishimizni tushuntiradi. Biz maʼlumotlaringizni sotmaymiz yoki ulardan reklama maqsadlarida foydalanmaymiz.
+Uzinfocomda biz xavfsiz aloqa asosiy huquq deb hisoblaymiz. Bu maxfiylik siyosati Matrix protokoli asosida qurilgan markazlashmagan xabar almashinuv platformasi Lochin ilovasidan foydalanganingizda qanday maʼlumotlarni olishimiz va ushbu maʼlumotlarni qanday himoyalashimiz va foydalanishimizni tushuntiradi. Biz maʼlumotlaringizni sotmaymiz yoki ulardan reklama maqsadlarida foydalanmaymiz.
 
 ## 2. Ushbu siyosatning qoʻllanilish doirasi
 
 Bu siyosat quyidagilarga nisbatan tatbiq etiladi:
 
 - Bizning rasmiy Matrix uy serverimiz: https://uchar.uz
-- Uchar brendi ostidagi Matrix ilovalarimiz (veb, desktop, mobil)
+- Lochin brendi ostidagi Matrix ilovalarimiz (veb, desktop, mobil)
 - Uzinfocom tomonidan bevosita boshqariladigan har qanday tegishli xizmatlar
 
 Bu siyosat quyidagilarga nisbatan tatbiq etilmaydi:
@@ -90,7 +90,7 @@ Uzinfocom sizning maʼlumotlaringizni himoya qilish uchun kuchli texnik va tashk
 
 ## 10. Bolalar uchun maxfiylik
 
-Uchar 16 yoshga toʻlmagan foydalanuvchilarning ota-ona roziligisiz foydalanishi uchun moʻljallanmagan. Biz bolalardan shaxsiy maʼlumotlarni bila turib yigʻmaymiz.
+Lochin 16 yoshga toʻlmagan foydalanuvchilarning ota-ona roziligisiz foydalanishi uchun moʻljallanmagan. Biz bolalardan shaxsiy maʼlumotlarni bila turib yigʻmaymiz.
 
 ## 11. Huquqiy asos va oshkorlik
 
@@ -115,7 +115,7 @@ Huquqlaringizni amalga oshirish uchun bogʻlanish: support@uchar.uz
 
 ## 13. Siyosat yangilanishlari
 
-Biz ushbu Maxfiylik siyosatini xizmatdagi oʻzgarishlar yoki qonunchilik talablarini aks ettirish maqsadida yangilashimiz mumkin. Muhim oʻzgarishlar haqida ilova yoki veb-sayt orqali xabar beriladi. Uchardan foydalanishda davom etish yangilangan siyosatga rozilik bildirishni anglatadi.
+Biz ushbu Maxfiylik siyosatini xizmatdagi oʻzgarishlar yoki qonunchilik talablarini aks ettirish maqsadida yangilashimiz mumkin. Muhim oʻzgarishlar haqida ilova yoki veb-sayt orqali xabar beriladi. Lochindan foydalanishda davom etish yangilangan siyosatga rozilik bildirishni anglatadi.
 
 ## 14. Bogʻlanish uchun maʼlumotlar
 

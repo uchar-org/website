@@ -16,8 +16,8 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Uchar',
-    default: 'Uchar - Experience your own ether.',
+    template: '%s - Lochin',
+    default: 'Lochin - Experience your own ether.',
   },
   description:
     'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',

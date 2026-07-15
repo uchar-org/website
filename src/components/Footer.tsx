@@ -20,10 +20,10 @@ export function Footer() {
                 src="/favicon.svg"
                 width={40}
                 height={40}
-                alt="Uchar Logo"
+                alt="Lochin Logo"
               />
               <div className="ml-4">
-                <p className="text-base font-semibold">Uchar</p>
+                <p className="text-base font-semibold">Lochin</p>
                 <p className="mt-1 text-sm">{t('title')}</p>
               </div>
             </div>

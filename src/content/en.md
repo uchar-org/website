@@ -7,14 +7,14 @@
 
 ## 1. Introduction
 
-At Uzinfocom, we believe secure communication is a fundamental right. This Privacy Policy explains what data we collect when you use Uchar, a decentralized messaging platform built on the Matrix protocol, and how we protect and use that data. We do not sell your information or use it for advertising.
+At Uzinfocom, we believe secure communication is a fundamental right. This Privacy Policy explains what data we collect when you use Lochin, a decentralized messaging platform built on the Matrix protocol, and how we protect and use that data. We do not sell your information or use it for advertising.
 
 ## 2. Scope of This Policy
 
 This policy applies to:
 
 - Our official Matrix homeserver at https://uchar.uz
-- Our Matrix client apps (web, desktop, mobile) branded as Uchar
+- Our Matrix client apps (web, desktop, mobile) branded as Lochin
 - Any related services directly managed by Uzinfocom
 
 This policy does not apply to:
@@ -90,7 +90,7 @@ Uzinfocom implements strong technical and organizational measures to protect you
 
 ## 10. Children’s Privacy
 
-Uchar is not intended for users under 16 without parental consent. We do not knowingly collect personal data from children.
+Lochin is not intended for users under 16 without parental consent. We do not knowingly collect personal data from children.
 
 ## 11. Legal Basis and Disclosure
 
@@ -116,7 +116,7 @@ To exercise your rights, contact: support@uchar.uz
 
 ## 13. Policy Updates
 
-We may update this Privacy Policy to reflect changes in the service or legal requirements. Material changes will be communicated via the app or website. Continued use of Uchar implies agreement to the updated policy.
+We may update this Privacy Policy to reflect changes in the service or legal requirements. Material changes will be communicated via the app or website. Continued use of Lochin implies agreement to the updated policy.
 
 ## 14. Contact Information
 
