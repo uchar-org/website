@@ -10,7 +10,7 @@ export function GooglePlayLink({
 }) {
   return (
     <Link
-      href="https://play.google.com/store/apps/details?id=uz.uzinfocom.ucharmessenger"
+      href="https://play.google.com/store/apps/details?id=uz.uzinfocom.lochinmessenger"
       aria-label="Download on Google Play Store"
       className={clsx(
         'rounded-lg transition-colors',

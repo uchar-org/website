@@ -5,7 +5,6 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 import { AppDemo } from '@/components/AppDemo'
-import { AppStoreLink } from '@/components/AppStoreLink'
 import { GooglePlayLink } from '@/components/GooglePlayLink'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
@@ -109,7 +108,6 @@ export function Hero() {
             </h1>
             <p className="mt-6 text-lg text-gray-600">{t('description')}</p>
             <div className="mt-8 flex flex-wrap gap-x-4 gap-y-4">
-              <AppStoreLink />
               <GooglePlayLink />
             </div>
           </div>

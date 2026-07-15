@@ -1,6 +1,5 @@
 'use client'
 
-import { AppStoreLink } from '@/components/AppStoreLink'
 import { GooglePlayLink } from './GooglePlayLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
@@ -24,7 +23,6 @@ export function CallToAction() {
           </h2>
           <p className="mt-4 text-lg text-gray-300">{t('description')}</p>
           <div className="mt-8 flex justify-center gap-5">
-            <AppStoreLink color="white" />
             <GooglePlayLink color="white" />
           </div>
         </div>

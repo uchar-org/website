@@ -10,7 +10,7 @@ export function AppStoreLink({
 }) {
   return (
     <Link
-      href="https://apps.apple.com/uz/app/uchar/id6756061583"
+      href="https://apps.apple.com/uz/app/lochin/id6756061583"
       aria-label="Download on the App Store"
       className={clsx(
         'rounded-lg transition-colors',
