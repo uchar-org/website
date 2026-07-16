@@ -59,9 +59,9 @@ pkgs.stdenv.mkDerivation {
   };
 
   meta = with pkgs.lib; {
-    homepage = "https://uchar.uz";
+    homepage = "https://uzberk.uz";
     mainProgram = "${manifest.name}-start";
-    description = "Website of Uchar";
+    description = "Website of Lochin";
     license = with licenses; [ cc-by-40 ];
     platforms = with platforms; linux ++ darwin;
     maintainers = with maintainers; [ orzklv ];

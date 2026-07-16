@@ -2,8 +2,8 @@
 
 - **Effective Date:** July 2025
 - **Owner:** Uzinfocom
-- **Platform:** lochin.uz
-- **Contact:** support@lochin.uz
+- **Platform:** uzberk.uz
+- **Contact:** support@uzberk.uz
 
 ## 1. Introduction
 
@@ -13,7 +13,7 @@ At Uzinfocom, we believe secure communication is a fundamental right. This Priva
 
 This policy applies to:
 
-- Our official Matrix homeserver at https://lochin.uz
+- Our official Matrix homeserver at https://uzberk.uz
 - Our Matrix client apps (web, desktop, mobile) branded as Lochin
 - Any related services directly managed by Uzinfocom
 
@@ -24,9 +24,9 @@ This policy does not apply to:
 
 ## 3. Who We Are
 
-Uzinfocom, a state-owned IT infrastructure provider in the Republic of Uzbekistan, is the data controller for services provided through lochin.uz.
+Uzinfocom, a state-owned IT infrastructure provider in the Republic of Uzbekistan, is the data controller for services provided through uzberk.uz.
 
-If you have any questions about this policy, please contact us at: 📧 support@lochin.uz
+If you have any questions about this policy, please contact us at: 📧 support@uzberk.uz
 
 ## 4. What Data We Collect
 
@@ -61,7 +61,7 @@ We do not track your activity for marketing or advertising purposes. We do not s
 
 ## 6. Federation with Other Servers
 
-Matrix is a federated protocol. If you interact with users on other homeservers (outside lochin.uz):
+Matrix is a federated protocol. If you interact with users on other homeservers (outside uzberk.uz):
 
 - Your Matrix ID (MXID), device keys, and messages may be shared with those servers
 - Uzinfocom cannot control how third-party homeservers process data
@@ -77,7 +77,7 @@ We do not send data to third parties unless you explicitly initiate such integra
 
 - Session data and logs are kept for up to 180 days for operational and security purposes
 - Encrypted message history is retained as long as your account exists, unless you delete it
-- You may delete your account at any time, which removes your profile, credentials, and local message history from lochin.uz
+- You may delete your account at any time, which removes your profile, credentials, and local message history from uzberk.uz
 
 ## 9. Security Measures
 
@@ -112,7 +112,7 @@ As a user, you have the right to:
 - Port your data to another Matrix server
 - Withdraw consent for optional data uses
 
-To exercise your rights, contact: support@lochin.uz
+To exercise your rights, contact: support@uzberk.uz
 
 ## 13. Policy Updates
 
@@ -122,5 +122,5 @@ We may update this Privacy Policy to reflect changes in the service or legal req
 
 - Uzinfocom – State Unitary Enterprise
 - Address: Republic of Uzbekistan, Tashkent city, Muminov Street 7/1, 100011
-- Email: support@lochin.uz
-- Website: https://lochin.uz
+- Email: support@uzberk.uz
+- Website: https://uzberk.uz

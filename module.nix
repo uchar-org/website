@@ -9,16 +9,16 @@ flake:
 }:
 let
   # Shortcut config
-  cfg = config.services.uchar.website;
+  cfg = config.services.lochin.website;
 
   # Packaged server
   contents = flake.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
   options = with lib; {
-    services.uchar.website = {
+    services.lochin.website = {
       enable = mkEnableOption ''
-        Uchar's official website.
+        Lochin's official website.
       '';
 
       proxy = {
@@ -29,14 +29,14 @@ in
         domain = mkOption {
           type = with types; nullOr str;
           default = null;
-          example = "uchar.uz";
+          example = "lochin.uz";
           description = "Domain to use while adding configurations to web proxy server";
         };
 
         alias = mkOption {
           type = with types; listOf str;
           default = [ ];
-          example = [ "www.uchar.uz" ];
+          example = [ "www.lochin.uz" ];
           description = "List of domain aliases to add to domain";
         };
       };
@@ -45,7 +45,7 @@ in
         type = types.package;
         default = contents;
         description = ''
-          Packaged uchar.uz website contents for nginx.
+          Packaged lochin.uz website contents for nginx.
         '';
       };
     };
@@ -55,7 +55,7 @@ in
     warnings = [
       (lib.mkIf (
         cfg.proxy.enable && cfg.proxy.domain == null
-      ) "services.uchar.website.proxy.domain must be set in order to properly generate certificate!")
+      ) "services.lochin.website.proxy.domain must be set in order to properly generate certificate!")
     ];
 
     services.nginx.virtualHosts = lib.mkIf (cfg.enable && cfg.proxy.enable) (

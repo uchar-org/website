@@ -2,8 +2,8 @@
 
 - **Kuchga kirish sanasi:** 2025 Iyul
 - **Egasi:** Uzinfocom
-- **Platforma:** lochin.uz
-- **Aloqa:** support@lochin.uz
+- **Platforma:** uzberk.uz
+- **Aloqa:** support@uzberk.uz
 
 ## 1. Kirish
 
@@ -13,7 +13,7 @@ Uzinfocomda biz xavfsiz aloqa asosiy huquq deb hisoblaymiz. Bu maxfiylik siyosat
 
 Bu siyosat quyidagilarga nisbatan tatbiq etiladi:
 
-- Bizning rasmiy Matrix uy serverimiz: https://lochin.uz
+- Bizning rasmiy Matrix uy serverimiz: https://uzberk.uz
 - Lochin brendi ostidagi Matrix ilovalarimiz (veb, desktop, mobil)
 - Uzinfocom tomonidan bevosita boshqariladigan har qanday tegishli xizmatlar
 
@@ -24,9 +24,9 @@ Bu siyosat quyidagilarga nisbatan tatbiq etilmaydi:
 
 ## 3. Biz kimmiz
 
-Uzinfocom — Oʻzbekiston Respublikasidagi davlat AyTi infratuzilmasi provayderi boʻlib, lochin.uz orqali koʻrsatiladigan xizmatlar uchun ma’lumotlar nazoratchisi hisoblanadi.
+Uzinfocom — Oʻzbekiston Respublikasidagi davlat AyTi infratuzilmasi provayderi boʻlib, uzberk.uz orqali koʻrsatiladigan xizmatlar uchun ma’lumotlar nazoratchisi hisoblanadi.
 
-Agar sizda ushbu siyosat boʻyicha savollar boʻlsa, iltimos, biz bilan bogʻlaning: 📧 support@lochin.uz
+Agar sizda ushbu siyosat boʻyicha savollar boʻlsa, iltimos, biz bilan bogʻlaning: 📧 support@uzberk.uz
 
 ## 4. Biz qanday maʼlumotlarni yigʻamiz
 
@@ -61,7 +61,7 @@ Sizning faoliyatingizni marketing yoki reklama maqsadlarida kuzatmaymiz. Sizning
 
 ## 6. Boshqa tarmoqlar bilan federatsiyalash
 
-Matrix federatsiyalashgan protokol hisoblanadi. Agar siz boshqa uy tarmoqlaridagi foydalanuvchilar bilan muloqot qilsangiz (lochin.uz tashqarisida):
+Matrix federatsiyalashgan protokol hisoblanadi. Agar siz boshqa uy tarmoqlaridagi foydalanuvchilar bilan muloqot qilsangiz (uzberk.uz tashqarisida):
 
 - Sizning Matrix ID (MXID), qurilma kalitlari va xabarlar ushbu serverlar bilan ulashilishi mumkin
 - Uzinfocom uchinchi tomon uy serverlari maʼlumotlarni qanday qayta ishlashini nazorat qila olmaydi
@@ -77,7 +77,7 @@ Toki siz tashqi xizmatlar bilan ochiq oydin bogʻlanishni tanlamasangiz, biz siz
 
 - Seans maʼlumotlari va jurnallari operativ va xavfsizlik maqsadlarida 180 kungacha saqlanadi.
 - Agar oʻchirib yubormasangiz, shifrlangan xabarlar tarixi hisobingiz mavjud boʻlgunicha saqlanadi.
-- Hisobingizni istalgan vaqtda oʻchirishingiz mumkin, bu sizning profilingizni, kirish maʼlumotlaringizni va lochin.uz manzilidagi mahalliy xabar tarixingizni oʻchiradi.
+- Hisobingizni istalgan vaqtda oʻchirishingiz mumkin, bu sizning profilingizni, kirish maʼlumotlaringizni va uzberk.uz manzilidagi mahalliy xabar tarixingizni oʻchiradi.
 
 ## 9. Xavfsizlik choralari
 
@@ -111,7 +111,7 @@ Foydalanuvchi sifatida siz quyidagi huquqlarga egasiz:
 - Maʼlumotlaringizni boshqa Matrix tarmogʻiga koʻchirish
 - Ixtiyoriy maʼlumotlardan foydalanish uchun roziligingizni bekor qilish
 
-Huquqlaringizni amalga oshirish uchun bogʻlanish: support@lochin.uz
+Huquqlaringizni amalga oshirish uchun bogʻlanish: support@uzberk.uz
 
 ## 13. Siyosat yangilanishlari
 
@@ -121,5 +121,5 @@ Biz ushbu Maxfiylik siyosatini xizmatdagi oʻzgarishlar yoki qonunchilik talabla
 
 - Uzinfocom – Davlat Unitar Tashkiloti
 - Manzil: Oʻzbekiston Respublikasi, Toshkent shahri, Moʻminov koʻchasi 7/1, 100011
-- Email: support@lochin.uz
-- Vebsayt: https://lochin.uz
+- Email: support@uzberk.uz
+- Vebsayt: https://uzberk.uz

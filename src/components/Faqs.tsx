@@ -63,7 +63,7 @@ export function Faqs() {
             {t.rich('description', {
               mail: (str) => (
                 <a
-                  href="mailto:support@lochin.uz"
+                  href="mailto:support@uzberk.uz"
                   className="text-gray-900 underline"
                 >
                   {str}
