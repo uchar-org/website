@@ -164,7 +164,7 @@ export function Header() {
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             <Button
-                              href="https://zzz.uzberk.uz"
+                              href="https://chat.uzberk.uz"
                               variant="outline"
                             >
                               {t('header.sign_in')}
@@ -188,7 +188,7 @@ export function Header() {
                   </option>
                 ))}
               </SelectField>
-              <Button href="https://zzz.uzberk.uz" variant="outline">
+              <Button href="https://chat.uzberk.uz" variant="outline">
                 {t('header.sign_in')}
               </Button>
               {/* <Button href="#">Download</Button> */}
