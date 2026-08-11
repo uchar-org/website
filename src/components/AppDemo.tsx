@@ -7,18 +7,18 @@ import { FaVideo } from '@react-icons/all-files/fa/FaVideo'
 import { useTranslations } from 'next-intl'
 
 export function AppDemo() {
-  const t = useTranslations("chat")
+  const t = useTranslations('chat')
 
   return (
     <AppScreen>
-      <AppScreen.Body className="bg-brand px-5 text-white">
-        <div className="mb-2 text-xl font-bold">{t("chats")}</div>
+      <AppScreen.Body className="bg-brand/40 px-5 text-white">
+        <div className="mb-2 text-xl font-bold">{t('chats')}</div>
 
         <div className="flex">
           <div className="flex flex-1 items-center gap-3">
             <Avatar text="H" color="amber" size="medium" />
             <div className="flex flex-col justify-center gap-0.5">
-              <div className="text-sm font-bold">{t("community")}</div>
+              <div className="text-sm font-bold">{t('community')}</div>
               <div className="text-xs">
                 <strong>Abdusattor</strong>: Bizda yaxshi, rahmat
               </div>
@@ -35,7 +35,7 @@ export function AppDemo() {
           <div className="flex items-center">
             <FaArrowLeft className="mr-3" />
             <Avatar text="H" color="amber" size="small" className="mr-2" />
-            <div className="text-sm">{t("community")}</div>
+            <div className="text-sm">{t('community')}</div>
             <FaVideo className="ml-auto" />
           </div>
           <div className="mt-3 border-t border-gray-200 pt-5">

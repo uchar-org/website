@@ -56,7 +56,7 @@ export function AppScreen({
       <div className="flex items-center justify-between px-4 pt-4 text-white">
         <FaUser />
         {/* <Logo className="h-6 flex-none" /> */}
-        <Image src="/favicon.svg" width={52} height={52} alt="Logo-uchar" />
+        <Image src="/logo.svg" width={52} height={52} alt="Logo-uchar" />
         <FaSearch />
       </div>
       {children}

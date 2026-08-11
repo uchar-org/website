@@ -39,17 +39,17 @@ interface CustomAnimationProps {
 
 const features = [
   {
-    name: "decentralized",
+    name: 'decentralized',
     icon: DeviceUserIcon,
     screen: ChatScreen,
   },
   {
-    name: "end_to_end",
+    name: 'end_to_end',
     icon: DeviceNotificationIcon,
     screen: E2EEncryptionScreen,
   },
   {
-    name: "power_features",
+    name: 'power_features',
     icon: DeviceTouchIcon,
     screen: PowerFeatures,
   },
@@ -181,24 +181,24 @@ const bodyAnimation: MotionProps = {
 
 type ScreenProps =
   | {
-    animated: true
-    custom: CustomAnimationProps
-  }
+      animated: true
+      custom: CustomAnimationProps
+    }
   | { animated?: false }
 
 function ChatScreen(props: ScreenProps) {
-  const t = useTranslations("chat")
+  const t = useTranslations('chat')
 
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(props.animated ? headerAnimation : {})}>
-        <div className="mb-2 text-xl font-bold">{t("chats")}</div>
+        <div className="mb-2 text-xl font-bold">{t('chats')}</div>
 
         <div className="flex">
           <div className="flex flex-1 items-center gap-3">
             <Avatar text="H" color="amber" size="medium" className="shrink-0" />
             <div className="flex flex-col justify-center gap-0.5">
-              <div className="text-sm font-bold">{t("community")}</div>
+              <div className="text-sm font-bold">{t('community')}</div>
               <div className="text-xs">
                 <strong>Abdusattor</strong>: Ha bugun kechga uchrashamiz
               </div>
@@ -217,7 +217,7 @@ function ChatScreen(props: ScreenProps) {
           <div className="flex items-center">
             <FaArrowLeft className="mr-3" />
             <Avatar text="H" color="amber" size="small" className="mr-2" />
-            <div className="text-sm">{t("community")}</div>
+            <div className="text-sm">{t('community')}</div>
             <FaVideo className="ml-auto" />
           </div>
           <div className="mt-3 border-t border-gray-200 pt-5">
@@ -258,7 +258,7 @@ function ChatScreen(props: ScreenProps) {
 }
 
 function E2EEncryptionScreen(props: ScreenProps) {
-  const t = useTranslations("chat")
+  const t = useTranslations('chat')
 
   return (
     <AppScreen className="w-full">
@@ -272,29 +272,27 @@ function E2EEncryptionScreen(props: ScreenProps) {
           <div className="text-gray-500">@shakhzodkudratov:uchar.uz</div>
           <div className="mx-auto inline-flex items-center gap-1 rounded-xl bg-green-900 px-3 text-sm text-green-200">
             <FaLock />
-            {t("encrypted")}
+            {t('encrypted')}
           </div>
         </div>
 
         <div className="mb-8 flex justify-evenly gap-4 text-2xl">
           <div className="flex flex-col items-center gap-2">
             <FaBell />
-            <span className="text-base">{t("mute")}</span>
+            <span className="text-base">{t('mute')}</span>
           </div>
 
           <div className="flex flex-col items-center gap-2">
             <FaVideo />
-            <span className="text-base">{t("call")}</span>
+            <span className="text-base">{t('call')}</span>
           </div>
         </div>
 
         <div className="flex gap-2 px-6">
           <FaLock className="shrink-0 text-xl" />
           <div>
-            <div>{t("messages_encrypted")}</div>
-            <div className="text-sm text-gray-400">
-              {t("messages_secured")}
-            </div>
+            <div>{t('messages_encrypted')}</div>
+            <div className="text-sm text-gray-400">{t('messages_secured')}</div>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -303,7 +301,7 @@ function E2EEncryptionScreen(props: ScreenProps) {
 }
 
 function PowerFeatures(props: ScreenProps) {
-  const t = useTranslations("chat")
+  const t = useTranslations('chat')
 
   return (
     <AppScreen className="w-full">
@@ -336,27 +334,27 @@ function PowerFeatures(props: ScreenProps) {
         <div className="mt-8 flex flex-col gap-8 px-6 text-gray-800 [&>div]:flex [&>div]:items-center [&>div]:gap-2">
           <div>
             <FaReply />
-            <p>{t("reply")}</p>
+            <p>{t('reply')}</p>
           </div>
           <div>
             <FaShare />
-            <p>{t("forward")}</p>
+            <p>{t('forward')}</p>
           </div>
           <div>
             <FaLink />
-            <p>{t("copy_link")}</p>
+            <p>{t('copy_link')}</p>
           </div>
           <div>
             <FaThumbtack />
-            <p>{t("pin")}</p>
+            <p>{t('pin')}</p>
           </div>
           <div>
             <FaCopy />
-            <p>{t("copy")}</p>
+            <p>{t('copy')}</p>
           </div>
           <div>
             <FaFileCode />
-            <p>{t("view_source")}</p>
+            <p>{t('view_source')}</p>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -401,13 +399,13 @@ function FeaturesDesktop() {
         {features.map((feature, featureIndex) => (
           <div
             key={featureIndex}
-            className="relative rounded-2xl transition-colors hover:bg-brand-600/30"
+            className="relative rounded-2xl transition-colors hover:bg-brand-400/90"
           >
             {featureIndex === selectedIndex && (
               <motion.div
                 layoutId="activeBackground"
                 //@ts-ignore
-                className="absolute inset-0 bg-brand-600"
+                className="absolute inset-0 bg-brand-400"
                 initial={{ borderRadius: 16 }}
               />
             )}
@@ -428,7 +426,7 @@ function FeaturesDesktop() {
       </TabList>
       <div className="relative col-span-6">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <CircleBackground color="#13B5C8" className="animate-spin-slower" />
+          <CircleBackground color="#FEFEFE" className="animate-spin-slower" />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-91.5">
           <TabPanels as={Fragment}>
@@ -495,7 +493,7 @@ function FeaturesMobile() {
     <>
       <div
         ref={slideContainerRef}
-        className="-mb-4 flex snap-x snap-mandatory -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] sm:-space-x-6 [&::-webkit-scrollbar]:hidden"
+        className="-mb-4 flex snap-x snap-mandatory [scrollbar-width:none] -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 sm:-space-x-6 [&::-webkit-scrollbar]:hidden"
       >
         {features.map((feature, featureIndex) => (
           <div
@@ -554,7 +552,7 @@ function FeaturesMobile() {
 }
 
 export function PrimaryFeatures() {
-  const t = useTranslations("home.features.primary")
+  const t = useTranslations('home.features.primary')
 
   return (
     <section
@@ -565,11 +563,9 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            {t("title")}
+            {t('title')}
           </h2>
-          <p className="mt-2 text-lg text-gray-400">
-            {t("description")}
-          </p>
+          <p className="mt-2 text-lg text-gray-400">{t('description')}</p>
         </div>
       </Container>
       <div className="mt-16 md:hidden">
