@@ -104,7 +104,7 @@
       },
       "server": {
         "question": "O‘z serverimni joylashtira olamanmi?",
-        "answer": "Ha, bu Matriksning asosiy afzalliklaridan biri. NixOS orqali Uchar tomonidan taqdim etilgan infratuzilma bilan Synapse yoki Dendrite yordamida o‘z uy serveringizni osongina joylashtirishingiz va istasangiz, shaxsiy serveringizni boshqarishingiz mumkin."
+        "answer": "Ha, bu Matriksning asosiy afzalliklaridan biri. NixOS orqali iCom tomonidan taqdim etilgan infratuzilma bilan Synapse yoki Dendrite yordamida o‘z uy serveringizni osongina joylashtirishingiz va istasangiz, shaxsiy serveringizni boshqarishingiz mumkin."
       },
       "platforms": {
         "question": "Boshqa platformalar bilan ishlata olamanmi?",

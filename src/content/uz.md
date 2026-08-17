@@ -2,19 +2,19 @@
 
 - **Kuchga kirish sanasi:** 2025 Iyul
 - **Egasi:** Uzinfocom
-- **Platforma:** uchar.uz
-- **Aloqa:** support@uchar.uz
+- **Platforma:** e-adm.uz
+- **Aloqa:** support@e-adm.uz
 
 ## 1. Kirish
 
-Uzinfocomda biz xavfsiz aloqa asosiy huquq deb hisoblaymiz. Bu maxfiylik siyosati Matrix protokoli asosida qurilgan markazlashmagan xabar almashinuv platformasi Uchar ilovasidan foydalanganingizda qanday maʼlumotlarni olishimiz va ushbu maʼlumotlarni qanday himoyalashimiz va foydalanishimizni tushuntiradi. Biz maʼlumotlaringizni sotmaymiz yoki ulardan reklama maqsadlarida foydalanmaymiz.
+Uzinfocomda biz xavfsiz aloqa asosiy huquq deb hisoblaymiz. Bu maxfiylik siyosati Matrix protokoli asosida qurilgan markazlashmagan xabar almashinuv platformasi iCom ilovasidan foydalanganingizda qanday maʼlumotlarni olishimiz va ushbu maʼlumotlarni qanday himoyalashimiz va foydalanishimizni tushuntiradi. Biz maʼlumotlaringizni sotmaymiz yoki ulardan reklama maqsadlarida foydalanmaymiz.
 
 ## 2. Ushbu siyosatning qoʻllanilish doirasi
 
 Bu siyosat quyidagilarga nisbatan tatbiq etiladi:
 
-- Bizning rasmiy Matrix uy serverimiz: https://uchar.uz
-- Uchar brendi ostidagi Matrix ilovalarimiz (veb, desktop, mobil)
+- Bizning rasmiy Matrix uy serverimiz: https://e-adm.uz
+- iCom brendi ostidagi Matrix ilovalarimiz (veb, desktop, mobil)
 - Uzinfocom tomonidan bevosita boshqariladigan har qanday tegishli xizmatlar
 
 Bu siyosat quyidagilarga nisbatan tatbiq etilmaydi:
@@ -24,9 +24,9 @@ Bu siyosat quyidagilarga nisbatan tatbiq etilmaydi:
 
 ## 3. Biz kimmiz
 
-Uzinfocom — Oʻzbekiston Respublikasidagi davlat AyTi infratuzilmasi provayderi boʻlib, uchar.uz orqali koʻrsatiladigan xizmatlar uchun ma’lumotlar nazoratchisi hisoblanadi.
+Uzinfocom — Oʻzbekiston Respublikasidagi davlat AyTi infratuzilmasi provayderi boʻlib, e-adm.uz orqali koʻrsatiladigan xizmatlar uchun ma’lumotlar nazoratchisi hisoblanadi.
 
-Agar sizda ushbu siyosat boʻyicha savollar boʻlsa, iltimos, biz bilan bogʻlaning: 📧 support@uchar.uz
+Agar sizda ushbu siyosat boʻyicha savollar boʻlsa, iltimos, biz bilan bogʻlaning: 📧 support@e-adm.uz
 
 ## 4. Biz qanday maʼlumotlarni yigʻamiz
 
@@ -61,7 +61,7 @@ Sizning faoliyatingizni marketing yoki reklama maqsadlarida kuzatmaymiz. Sizning
 
 ## 6. Boshqa tarmoqlar bilan federatsiyalash
 
-Matrix federatsiyalashgan protokol hisoblanadi. Agar siz boshqa uy tarmoqlaridagi foydalanuvchilar bilan muloqot qilsangiz (uchar.uz tashqarisida):
+Matrix federatsiyalashgan protokol hisoblanadi. Agar siz boshqa uy tarmoqlaridagi foydalanuvchilar bilan muloqot qilsangiz (e-adm.uz tashqarisida):
 
 - Sizning Matrix ID (MXID), qurilma kalitlari va xabarlar ushbu serverlar bilan ulashilishi mumkin
 - Uzinfocom uchinchi tomon uy serverlari maʼlumotlarni qanday qayta ishlashini nazorat qila olmaydi
@@ -77,7 +77,7 @@ Toki siz tashqi xizmatlar bilan ochiq oydin bogʻlanishni tanlamasangiz, biz siz
 
 - Seans maʼlumotlari va jurnallari operativ va xavfsizlik maqsadlarida 180 kungacha saqlanadi.
 - Agar oʻchirib yubormasangiz, shifrlangan xabarlar tarixi hisobingiz mavjud boʻlgunicha saqlanadi.
-- Hisobingizni istalgan vaqtda oʻchirishingiz mumkin, bu sizning profilingizni, kirish maʼlumotlaringizni va uchar.uz manzilidagi mahalliy xabar tarixingizni oʻchiradi.
+- Hisobingizni istalgan vaqtda oʻchirishingiz mumkin, bu sizning profilingizni, kirish maʼlumotlaringizni va e-adm.uz manzilidagi mahalliy xabar tarixingizni oʻchiradi.
 
 ## 9. Xavfsizlik choralari
 
@@ -90,7 +90,7 @@ Uzinfocom sizning maʼlumotlaringizni himoya qilish uchun kuchli texnik va tashk
 
 ## 10. Bolalar uchun maxfiylik
 
-Uchar 16 yoshga toʻlmagan foydalanuvchilarning ota-ona roziligisiz foydalanishi uchun moʻljallanmagan. Biz bolalardan shaxsiy maʼlumotlarni bila turib yigʻmaymiz.
+iCom 16 yoshga toʻlmagan foydalanuvchilarning ota-ona roziligisiz foydalanishi uchun moʻljallanmagan. Biz bolalardan shaxsiy maʼlumotlarni bila turib yigʻmaymiz.
 
 ## 11. Huquqiy asos va oshkorlik
 
@@ -111,15 +111,15 @@ Foydalanuvchi sifatida siz quyidagi huquqlarga egasiz:
 - Maʼlumotlaringizni boshqa Matrix tarmogʻiga koʻchirish
 - Ixtiyoriy maʼlumotlardan foydalanish uchun roziligingizni bekor qilish
 
-Huquqlaringizni amalga oshirish uchun bogʻlanish: support@uchar.uz
+Huquqlaringizni amalga oshirish uchun bogʻlanish: support@e-adm.uz
 
 ## 13. Siyosat yangilanishlari
 
-Biz ushbu Maxfiylik siyosatini xizmatdagi oʻzgarishlar yoki qonunchilik talablarini aks ettirish maqsadida yangilashimiz mumkin. Muhim oʻzgarishlar haqida ilova yoki veb-sayt orqali xabar beriladi. Uchardan foydalanishda davom etish yangilangan siyosatga rozilik bildirishni anglatadi.
+Biz ushbu Maxfiylik siyosatini xizmatdagi oʻzgarishlar yoki qonunchilik talablarini aks ettirish maqsadida yangilashimiz mumkin. Muhim oʻzgarishlar haqida ilova yoki veb-sayt orqali xabar beriladi. iComdan foydalanishda davom etish yangilangan siyosatga rozilik bildirishni anglatadi.
 
 ## 14. Bogʻlanish uchun maʼlumotlar
 
 - Uzinfocom – Davlat Unitar Tashkiloti
 - Manzil: Oʻzbekiston Respublikasi, Toshkent shahri, Moʻminov koʻchasi 7/1, 100011
-- Email: support@uchar.uz
-- Vebsayt: https://uchar.uz
+- Email: support@e-adm.uz
+- Vebsayt: https://e-adm.uz

@@ -16,9 +16,14 @@ export function Footer() {
           <div>
             <div className="flex items-center text-gray-900">
               {/* <Logomark className="h-10 w-10 flex-none fill-gray-900" /> */}
-              <Image src="/logo.svg" width={40} height={40} alt="Uchar Logo" />
+              <Image
+                src="/logo-dark.svg"
+                width={40}
+                height={40}
+                alt="iCom Logo"
+              />
               <div className="ml-4">
-                <p className="text-base font-semibold">Uchar</p>
+                <p className="text-base font-semibold">iCom</p>
                 <p className="mt-1 text-sm">{t('title')}</p>
               </div>
             </div>

@@ -104,7 +104,7 @@
       },
       "server": {
         "question": "Can I host my own server?",
-        "answer": "Yes — that’s one of the core strengths of Matrix. You can deploy your own homeserver using Synapse or Dendrite easily with Uchar's provided infrastructure via NixOS, and manage your own identity server if desired."
+        "answer": "Yes — that’s one of the core strengths of Matrix. You can deploy your own homeserver using Synapse or Dendrite easily with iCom's provided infrastructure via NixOS, and manage your own identity server if desired."
       },
       "platforms": {
         "question": "Can I use it with other platforms?",

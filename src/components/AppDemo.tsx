@@ -11,7 +11,7 @@ export function AppDemo() {
 
   return (
     <AppScreen>
-      <AppScreen.Body className="bg-brand/40 px-5 text-white">
+      <AppScreen.Body className="bg-inherit px-5 text-white">
         <div className="mb-2 text-xl font-bold">{t('chats')}</div>
 
         <div className="flex">

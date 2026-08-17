@@ -93,7 +93,12 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Image src="/logo.svg" width={64} height={64} alt="Favicon" />
+              <Image
+                src="/logo-dark.svg"
+                width={64}
+                height={64}
+                alt="Favicon"
+              />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -164,7 +169,7 @@ export function Header() {
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             <Button
-                              href="https://chat.uchar.uz"
+                              href="https://chat.e-adm.uz"
                               variant="outline"
                             >
                               {t('header.sign_in')}
@@ -188,7 +193,7 @@ export function Header() {
                   </option>
                 ))}
               </SelectField>
-              <Button href="https://chat.uchar.uz" variant="outline">
+              <Button href="https://chat.e-adm.uz" variant="outline">
                 {t('header.sign_in')}
               </Button>
               {/* <Button href="#">Download</Button> */}
