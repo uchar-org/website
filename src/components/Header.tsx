@@ -17,6 +17,7 @@ import { useTranslations } from 'next-intl'
 import { SelectField } from './Fields'
 import { usePathname, useRouter } from '@/i18n/navigation'
 import { useParams } from 'next/navigation'
+import Config from '../../public/config.json'
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -168,10 +169,7 @@ export function Header() {
                             </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button
-                              href="https://chat.e-adm.uz"
-                              variant="outline"
-                            >
+                            <Button href={Config.sign_in_url} variant="outline">
                               {t('header.sign_in')}
                             </Button>
                           </div>
@@ -193,7 +191,7 @@ export function Header() {
                   </option>
                 ))}
               </SelectField>
-              <Button href="https://chat.e-adm.uz" variant="outline">
+              <Button href={Config.sign_in_url} variant="outline">
                 {t('header.sign_in')}
               </Button>
               {/* <Button href="#">Download</Button> */}
