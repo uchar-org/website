@@ -67,6 +67,9 @@ stdenv.mkDerivation {
     version = manifest.version;
     src = source;
     fetcherVersion = 3;
+    prePnpmInstall = ''
+     pnpm config set fetch-timeout 900000
+    '';
     hash = "sha256-hzmgCCY2A5ETNll2FIK3byq/Ro2p11Oyv76AHPEfyaI=";
   };
 
