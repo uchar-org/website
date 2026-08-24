@@ -17,7 +17,7 @@ import { useTranslations } from 'next-intl'
 import { SelectField } from './Fields'
 import { usePathname, useRouter } from '@/i18n/navigation'
 import { useParams } from 'next/navigation'
-import Config from '../../public/config.json'
+import { useEffect, useState } from 'react'
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -60,7 +60,7 @@ function MobileNavLink(
   )
 }
 
-export function Header() {
+export function Header({ signInUrl = '' }: { signInUrl?: string }) {
   const t = useTranslations('nav')
   const pathname = usePathname()
   const router = useRouter()
@@ -169,7 +169,7 @@ export function Header() {
                             </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href={Config.sign_in_url} variant="outline">
+                            <Button href={signInUrl} variant="outline">
                               {t('header.sign_in')}
                             </Button>
                           </div>
@@ -191,7 +191,7 @@ export function Header() {
                   </option>
                 ))}
               </SelectField>
-              <Button href={Config.sign_in_url} variant="outline">
+              <Button href={signInUrl} variant="outline">
                 {t('header.sign_in')}
               </Button>
               {/* <Button href="#">Download</Button> */}

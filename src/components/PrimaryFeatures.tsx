@@ -513,7 +513,7 @@ function FeaturesMobile() {
               <PhoneFrame className="relative mx-auto w-full max-w-91.5">
                 <feature.screen />
               </PhoneFrame>
-              <div className="absolute inset-x-0 bottom-0 bg-brand-600/95 p-6 backdrop-blur-sm sm:p-10">
+              <div className="bg-brand-600/95 p-6 backdrop-blur-sm sm:p-10">
                 <feature.icon className="h-8 w-8" />
                 <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
                   {t(`${feature.name}.title`)}

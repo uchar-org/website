@@ -7,6 +7,9 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { setRequestLocale } from 'next-intl/server'
 import { Layout } from '@/components/Layout'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import * as fs from 'node:fs/promises'
 
 const inter = localFont({ src: './Inter.ttf' })
 
@@ -37,6 +40,9 @@ export default async function RootLayout({
 
   setRequestLocale(locale)
 
+  const res = await fs.readFile('public/config.json', 'utf-8')
+  const config = JSON.parse(res) as { sign_in_url: string }
+
   return (
     <html
       lang={locale}
@@ -44,7 +50,9 @@ export default async function RootLayout({
     >
       <body>
         <NextIntlClientProvider>
-          <Layout>{children}</Layout>
+          <Header signInUrl={config?.sign_in_url} />
+          <main className="flex-auto">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
