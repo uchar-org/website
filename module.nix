@@ -41,6 +41,12 @@ in
         };
       };
 
+      config = mkOption {
+        type = with types; attrsOf str;
+        default = import ./config.nix;
+        description = "Configuration to pass to the web app.";
+      };
+
       package = mkOption {
         type = types.package;
         default = contents;
@@ -66,7 +72,9 @@ in
             forceSSL = true;
             enableACME = true;
             serverAliases = cfg.proxy.alias;
-            root = cfg.package;
+            root = cfg.package.override {
+              conf = cfg.config;
+            };
           };
         }
     );

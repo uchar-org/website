@@ -1,29 +1,37 @@
 {
-  pkgs ?
-    let
-      lock = (builtins.fromJSON (builtins.readFile ./flake.lock)).nodes.nixpkgs.locked;
-      nixpkgs = fetchTarball {
-        url = "https://github.com/nixos/nixpkgs/archive/${lock.rev}.tar.gz";
-        sha256 = lock.narHash;
-      };
-    in
-    import nixpkgs { overlays = [ ]; },
+  lib,
+  stdenv,
+  writeText,
+  google-fonts,
+
+  nodejs_22,
+  pnpmConfigHook,
+  pnpm,
+  typescript,
+  vips,
+  fetchPnpmDeps,
+
+  # Overridable
+  conf ? import ./config.nix,
   ...
 }:
 let
   # Manifest data
-  manifest = pkgs.lib.importJSON ./package.json;
+  manifest =lib.importJSON ./package.json;
 
   # All source codes
   source = ./.;
+
+  # Default configuration
+  config = writeText "config.json" (builtins.toJSON conf);
 in
-pkgs.stdenv.mkDerivation {
+stdenv.mkDerivation {
   pname = manifest.name;
   version = manifest.version;
 
   src = source;
 
-  nativeBuildInputs = with pkgs; [
+  nativeBuildInputs =  [
     nodejs_22
     pnpmConfigHook
     pnpm
@@ -33,7 +41,7 @@ pkgs.stdenv.mkDerivation {
 
   preBuild = ''
     cp "${
-      pkgs.google-fonts.override { fonts = [ "Inter" ]; }
+      google-fonts.override { fonts = [ "Inter" ]; }
     }/share/fonts/truetype/Inter[opsz,wght].ttf" ./src/app/Inter.ttf
   '';
 
@@ -48,17 +56,24 @@ pkgs.stdenv.mkDerivation {
 
     # Move compiled contents
     cp -r ./out/* $out
+
+    # Replace config with provided value
+    rm $out/config.json
+    cp ${config} $out/config.json
   '';
 
-  pnpmDeps = pkgs.fetchPnpmDeps {
+  pnpmDeps = fetchPnpmDeps {
     pname = manifest.name;
     version = manifest.version;
     src = source;
     fetcherVersion = 3;
+    prePnpmInstall = ''
+     pnpm config set fetch-timeout 900000
+    '';
     hash = "sha256-hzmgCCY2A5ETNll2FIK3byq/Ro2p11Oyv76AHPEfyaI=";
   };
 
-  meta = with pkgs.lib; {
+  meta = with lib; {
     homepage = "https://uchar.uz";
     mainProgram = "${manifest.name}-start";
     description = "Website of Uchar";
