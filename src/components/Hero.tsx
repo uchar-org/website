@@ -10,6 +10,7 @@ import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import logoUzinfocom from '@/images/logos/uzinfocom.svg'
 import { useTranslations } from 'next-intl'
+import { AppStoreLink } from './AppStoreLink'
 
 function BackgroundIllustration(props: React.ComponentPropsWithoutRef<'div'>) {
   let id = useId()
@@ -108,6 +109,7 @@ export function Hero() {
             </h1>
             <p className="mt-6 text-lg text-gray-600">{t('description')}</p>
             <div className="mt-8 flex flex-wrap gap-x-4 gap-y-4">
+              <AppStoreLink />
               <GooglePlayLink />
             </div>
           </div>
