@@ -31,6 +31,7 @@ declare const messages: {
       "sign_in": "Sign In"
     },
     "footer": {
+      "name": "Lochin Communication Platform",
       "title": "Feel your own ether.",
       "copyright": "Copyright {date}. All rights reserved."
     }

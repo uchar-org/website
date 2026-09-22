@@ -8,6 +8,7 @@ import Macbook from '@/images/macbook.png'
 import Phone from '@/images/phone.png'
 import { GooglePlayLink } from '@/components/GooglePlayLink'
 import { WindowsLink } from '@/components/WindowsLink'
+import { AppStoreLink } from '@/components/AppStoreLink'
 
 export default function Download(props: PageProps<'/[locale]/download'>) {
   const { locale } = use(props.params)
@@ -29,12 +30,12 @@ export default function Download(props: PageProps<'/[locale]/download'>) {
         </div>
 
         <div className="relative grid gap-6 lg:grid-cols-2 lg:gap-8">
-          {/* Android  */}
+          {/* Mobile  */}
           <div className="group relative flex min-h-135 flex-col overflow-hidden rounded-4xl border border-gray-200 bg-white shadow-xl shadow-gray-900/8">
             <div className="relative min-h-82 flex-1 overflow-hidden bg-linear-to-b from-brand-600 via-brand-300 to-white sm:min-h-96">
               <Image
                 src={Phone}
-                alt="Lochin for Android"
+                alt="Lochin for Mobile"
                 priority
                 className="absolute top-8 left-1/2 w-57 -translate-x-1/2 drop-shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 sm:top-10 sm:w-64"
               />
@@ -48,7 +49,10 @@ export default function Download(props: PageProps<'/[locale]/download'>) {
               <p className="text-base text-gray-600">
                 {t('android.description')}
               </p>
-              <GooglePlayLink color="black" />
+              <div className="relative flex gap-2">
+                <GooglePlayLink color="black" />
+                <AppStoreLink color="black" />
+              </div>
             </div>
           </div>
 
@@ -75,7 +79,7 @@ export default function Download(props: PageProps<'/[locale]/download'>) {
             </div>
           </div>
         </div>
-      </Container>
-    </div>
+      </Container >
+    </div >
   )
 }

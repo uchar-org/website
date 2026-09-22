@@ -23,7 +23,7 @@ export function Footer() {
                 alt="Lochin Logo"
               />
               <div className="ml-4">
-                <p className="text-base font-semibold">Lochin</p>
+                <p className="text-base font-semibold">{t('name')}</p>
                 <p className="mt-1 text-sm">{t('title')}</p>
               </div>
             </div>
