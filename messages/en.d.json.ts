@@ -23,6 +23,7 @@ declare const messages: {
       "reviews": "Reviews",
       "pricing": "Pricing",
       "privacy": "Privacy",
+      "download": "Download",
       "faqs": "FAQs"
     },
     "header": {
@@ -32,6 +33,22 @@ declare const messages: {
     "footer": {
       "title": "Feel your own ether.",
       "copyright": "Copyright {date}. All rights reserved."
+    }
+  },
+  "download": {
+    "title": "Download the App",
+    "description": "Get the app for your device and start messaging securely today.",
+    "ios": {
+      "title": "iOS",
+      "description": "Download the app from the App Store."
+    },
+    "android": {
+      "title": "Android",
+      "description": "Download the app from Google Play."
+    },
+    "desktop": {
+      "title": "Desktop",
+      "description": "Download the app for Windows, macOS, or Linux."
     }
   },
   "home": {

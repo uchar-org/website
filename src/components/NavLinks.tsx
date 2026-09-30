@@ -14,6 +14,7 @@ export function NavLinks() {
     [t("features"), '/#features'],
     [t("faqs"), '/#faqs'],
     [t("privacy"), '/privacy'],
+    [t("download"), '/download'],
   ].map(([label, href], index) => (
     <Link
       key={href}

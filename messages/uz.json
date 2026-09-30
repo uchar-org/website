@@ -20,6 +20,7 @@
       "reviews": "Sharhlar",
       "pricing": "Narxlar",
       "privacy": "Maxfiylik",
+      "download": "Yuklab olish",
       "faqs": "Savol-javoblar"
     },
     "header": {
@@ -29,6 +30,22 @@
     "footer": {
       "title": "Oʻz efiringizni kashf eting.",
       "copyright": "Copyright {date}. Barcha huquqlar himoyalangan."
+    }
+  },
+  "download": {
+    "title": "Ilovani yuklab olish",
+    "description": "Qurilmangiz uchun ilovani oling va bugunoq xavfsiz xabarlashishni boshlang.",
+    "ios": {
+      "title": "iOS",
+      "description": "App Store’dan ilovani yuklab oling."
+    },
+    "android": {
+      "title": "Android",
+      "description": "Google Play’dan ilovani yuklab oling."
+    },
+    "desktop": {
+      "title": "Desktop",
+      "description": "Windows, macOS yoki Linux uchun ilovani yuklab oling."
     }
   },
   "home": {

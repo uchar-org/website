@@ -20,6 +20,7 @@
       "reviews": "Отзывы",
       "pricing": "Цены",
       "privacy": "Конфиденциальность",
+      "download": "Скачать",
       "faqs": "Вопросы и ответы"
     },
     "header": {
@@ -29,6 +30,22 @@
     "footer": {
       "title": "Почувствуйте свой собственный эфир.",
       "copyright": "Copyright {date}. Все права защищены."
+    }
+  },
+  "download": {
+    "title": "Скачать приложение",
+    "description": "Получите приложение для вашего устройства и начните безопасно общаться уже сегодня.",
+    "ios": {
+      "title": "iOS",
+      "description": "Скачайте приложение из App Store."
+    },
+    "android": {
+      "title": "Android",
+      "description": "Скачайте приложение из Google Play."
+    },
+    "desktop": {
+      "title": "Компьютер",
+      "description": "Скачайте приложение для Windows, macOS или Linux."
     }
   },
   "home": {
