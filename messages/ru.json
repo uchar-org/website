@@ -43,6 +43,10 @@
       "title": "Android",
       "description": "Скачайте приложение из Google Play."
     },
+    "mobile": {
+      "title": "Мобильки",
+      "description": "Загружайте мобильные приложения из магазинов."
+    },
     "desktop": {
       "title": "Компьютер",
       "description": "Скачайте приложение для Windows, macOS или Linux."

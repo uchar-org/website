@@ -46,6 +46,10 @@ declare const messages: {
       "title": "Android",
       "description": "Download the app from Google Play."
     },
+    "mobile": {
+      "title": "Mobile",
+      "description": "Download mobile apps from Stores."
+    },
     "desktop": {
       "title": "Desktop",
       "description": "Download the app for Windows, macOS, or Linux."

@@ -43,6 +43,10 @@
       "title": "Android",
       "description": "Google Play’dan ilovani yuklab oling."
     },
+    "mobile": {
+      "title": "Mobil",
+      "description": "Mobil ilovalarni yuklab oling."
+    },
     "desktop": {
       "title": "Desktop",
       "description": "Windows, macOS yoki Linux uchun ilovani yuklab oling."

@@ -35,19 +35,19 @@ export default function Download(props: PageProps<'/[locale]/download'>) {
             <div className="relative min-h-82 flex-1 overflow-hidden bg-linear-to-b from-brand-600 via-brand-300 to-white sm:min-h-96">
               <Image
                 src={Phone}
-                alt="Lochin for Mobile"
+                alt="Uchar for Mobile"
                 priority
-                className="absolute top-8 left-1/2 w-57 -translate-x-1/2 drop-shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 sm:top-10 sm:w-64"
+                className="absolute top-8 left-1/2 w-57 -translate-x-1/2 drop-shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 sm:top-10 sm:w-156"
               />
               <div className="absolute inset-x-0 bottom-0 h-28 bg-linear-to-b from-transparent to-white" />
             </div>
 
             <div className="relative flex flex-col items-center gap-2 px-6 pt-3 pb-9 text-center sm:px-10 sm:pb-11">
               <h2 className="text-3xl font-semibold tracking-tight text-gray-900">
-                {t('android.title')}
+                {t('mobile.title')}
               </h2>
               <p className="text-base text-gray-600">
-                {t('android.description')}
+                {t('mobile.description')}
               </p>
               <div className="relative flex gap-2">
                 <GooglePlayLink color="black" />
@@ -61,7 +61,7 @@ export default function Download(props: PageProps<'/[locale]/download'>) {
             <div className="relative min-h-82 flex-1 overflow-hidden bg-linear-to-b from-gray-900 via-brand-600 to-white sm:min-h-96">
               <Image
                 src={Macbook}
-                alt="Lochin for Windows"
+                alt="Uchar for Desktop"
                 priority
                 className="absolute top-16 left-1/2 w-136 max-w-none -translate-x-1/2 drop-shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 sm:top-16 sm:w-156"
               />
